@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0 auto;
+}
+
+html {
+  background: #e2e2e2;
+  color: #333;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* NAVBAR */
+.nav1 p {
+  font-size: 14px;
+  text-align: center;
+  height: 38px;
+  background: #333;
+  color: #fff;
+}
+
+.nav2 {
+  background: #ada9a1;
+  height: 79px;
+}
+
+.nav2 ul {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.nav2 a {
+  text-decoration: none;
+  color: #333;
+  font-size: 1rem;
+}
+
+.nav2 img {
+  height: 23px;
+  width: 23px;
+}
