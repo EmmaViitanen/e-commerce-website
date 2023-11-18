@@ -1,3 +1,5 @@
+/* In this CSS file we write the code for all basic functions, for example:
+the background color, font-sizes, header and footer */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -5,7 +7,7 @@
 }
 
 html {
-  background: #e2e2e2;
+  background: rgba(226, 226, 226, 1);
   color: #333;
   font-size: 16px;
   font-family: "Open Sans", sans-serif;
@@ -27,28 +29,36 @@ h3 {
 }
 
 /* NAVBAR */
+nav {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 .nav1 p {
   font-size: 14px;
   text-align: center;
   height: 38px;
+  line-height: 38px;
   background: #333;
-  color: #fff;
+  color: rgba(255, 255, 255, 1);
 }
 
 .nav2 {
-  background: #ada9a1;
+  background: rgba(173, 169, 161, 0.5);
   height: 79px;
-}
-
-.nav2 ul {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
 }
 
 .nav2 a {
   text-decoration: none;
   color: #333;
   font-size: 1rem;
+  line-height: 79px;
 }
 
 .nav2 img {
@@ -56,7 +66,46 @@ h3 {
   width: 23px;
 }
 
+.pages a {
+  padding-right: 50px;
+}
+
+.icons a {
+  padding-left: 50px;
+}
+
 /* FOOTER */
 footer {
-  background-color: #d9d9d9;
+  background-color: rgba(217, 217, 217, 1);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 463px;
+  align-items: center;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 100px;
+}
+.footer-links p {
+  line-height: 30px;
+}
+.footer-links h3 {
+  line-height: 50px;
+}
+
+.footer-icons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 100px;
+}
+
+.icon-column {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.footer-icons img {
+  height: 45px;
 }

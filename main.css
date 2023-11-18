@@ -1,0 +1,27 @@
+/* In this CSS file we write the code for the main section in the body.
+Remember to keep the code organized. */
+
+/* ABOUT page */
+.about-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 504px;
+  background-color: rgba(201, 200, 198, 1);
+  align-items: center;
+  text-align: center;
+}
+
+.about-intro p {
+  width: 730px;
+}
+
+.sub-head {
+  padding: 90px 0 10px 0;
+  font-weight: bold;
+}
+
+.about {
+  width: 1052px;
+  padding-bottom: 100px;
+}
