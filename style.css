@@ -1,5 +1,5 @@
 /* In this CSS file we write the code for all basic functions, for example:
-the background color, font-sizes, header and footer */
+the background color, set font-sizes, header and footer */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -104,6 +104,7 @@ footer {
 .icon-column {
   display: grid;
   grid-template-columns: 1fr;
+  row-gap: 70px;
 }
 
 .footer-icons img {

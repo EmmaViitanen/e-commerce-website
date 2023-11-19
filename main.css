@@ -57,6 +57,23 @@ Remember to keep the code organized. */
   height: 418px;
 }
 
+.box img {
+  width: 320px;
+  height: 341px;
+}
+
+.box figcaption {
+  padding-left: 13px;
+}
+
+.box figcaption .artist {
+  font-size: 0.9rem;
+}
+
+.box figcaption .name {
+  font-weight: 600;
+}
+
 /* THANK YOU PAGE */
 .thanx {
   height: 838px;
