@@ -23,10 +23,10 @@ class MinHeader extends HTMLElement {
                   </div>
                   <div class="icons">
                     <ul>
-                        <a href="index.html"><img src="https://static-00.iconduck.com/assets.00/search-icon-2048x2048-3akpq6z9.png"></a>
-                        <a href="index.html"><img src="https://cdn.icon-icons.com/icons2/3065/PNG/512/profile_user_account_icon_190938.png"></a>
-                        <a href="index.html"><img src="https://cdn3.iconfinder.com/data/icons/feather-5/24/heart-512.png"></a>
-                        <a href="index.html"><img src="https://static-00.iconduck.com/assets.00/shopping-bag-icon-450x512-4w8uknzm.png"></a>
+                        <a href="index.html"><img src="img/searchicon.png"></a>
+                        <a href="index.html"><img src="img/account.png"></a>
+                        <a href="index.html"><img src="img/heart.png"></a>
+                        <a href="shoppingcart.html"><img src="img/shoppingbag.png"></a>
                     </ul>
                   </div>
                 </div>
@@ -50,11 +50,11 @@ class MinFooter extends HTMLElement {
           <p>Shipping</p>
           <p>Return & Exchanges</p>
           <p>Order Tracking</p>
-          <p>Contact Us</p>
+          <a href="contact.html"><p>Contact Us</p></a>
         </div>
         <div class="discover">
           <h3>DISCOVER</h3>
-          <p>About Us</p>
+          <a href="about.html"><p>About Us</p></a>
           <p>Membership</p>
           <p>Newsletter</p>
         </div>

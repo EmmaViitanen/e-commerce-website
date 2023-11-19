@@ -1,8 +1,8 @@
 /* In this CSS file we write the code for the main section in the body.
 Remember to keep the code organized. */
 
-/* ABOUT page */
-.about-intro {
+/* All pages */
+.intro {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,10 +12,11 @@ Remember to keep the code organized. */
   text-align: center;
 }
 
-.about-intro p {
+.intro p {
   width: 730px;
 }
 
+/* ABOUT page */
 .sub-head {
   padding: 90px 0 10px 0;
   font-weight: bold;
@@ -24,4 +25,95 @@ Remember to keep the code organized. */
 .about {
   width: 1052px;
   padding-bottom: 100px;
+}
+
+/* Posters */
+.posters {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#categories-head {
+  font-weight: 400;
+}
+
+.categories img {
+  height: 15px;
+}
+
+.poster-categories {
+  margin-top: 54px;
+  margin-bottom: 170px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 31px;
+  row-gap: 34px;
+}
+
+.box {
+  background: rgba(255, 255, 255, 1);
+  width: 320px;
+  height: 418px;
+}
+
+/* THANK YOU PAGE */
+.thanx {
+  height: 838px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.thax h1 {
+  line-height: 70px;
+}
+.thanx h3 {
+  line-height: 60px;
+}
+
+/* CONTACT PAGE */
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 1033px;
+}
+
+label[for="email"],
+[for="message"] {
+  padding: 30px 0px 5px 0px;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"],
+[type="email"] {
+  height: 29px;
+  width: 450px;
+  border: none;
+}
+
+input[type="message"] {
+  height: 325px;
+  width: 450px;
+  border: none;
+}
+
+input[type="submit"] {
+  background-color: rgba(173, 169, 161, 0.5);
+  color: #333;
+  font-size: 20px;
+  width: 296px;
+  height: 60px;
+  border: none;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
 }
