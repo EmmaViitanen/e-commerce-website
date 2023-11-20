@@ -182,14 +182,24 @@ hr {
   color: rgba(85, 85, 85, 1);
 }
 /* ------ CHECKOUT PAGE ------ */
-/* The following 1 line was adapted from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_circles Accessed 2023-11-20 */
 .checkout-page {
+  height: 2000px;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  row-gap: 50px;
   align-items: center;
   justify-content: center;
+  padding-top: 150px;
 }
+
+form {
+  width: 672px;
+}
+
+#phonenumber {
+  background-color: red;
+}
+
+/* The following 7 lines was adapted from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_circles Accessed 2023-11-20 */
 .dot {
   height: 40px;
   width: 40px;
@@ -197,6 +207,7 @@ hr {
   border-radius: 50%;
   display: inline-block;
 }
+
 .payement {
   background-color: #fff;
   width: 1233px;
@@ -207,8 +218,13 @@ hr {
   align-items: center;
   padding: 25px 0px 25px 0px;
 }
+
 .payement-img img {
   height: 54px;
+}
+
+.card-payement-img img {
+  height: 40px;
 }
 
 .shipping {
@@ -222,7 +238,7 @@ hr {
 }
 
 .shipping-img img {
-  height: 27px;
+  height: 40px;
 }
 
 /* ------ THANK YOU PAGE ------ */
