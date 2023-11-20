@@ -134,12 +134,16 @@ Remember to keep the code organized. */
   justify-content: center;
   align-items: center;
 }
+.shoppingcart-page h3 {
+  padding-bottom: 40px;
+}
 .shoppingcart {
   background-color: #fff;
   width: 1314px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   row-gap: 35px;
+  padding: 50px 0px 50px 0px;
 }
 
 .shoppingcart a img {
@@ -156,6 +160,26 @@ Remember to keep the code organized. */
 }
 hr {
   border-top: 5px solid #333;
+}
+
+.confirm-button {
+  background-color: rgba(173, 169, 161, 0.5);
+  height: 60px;
+  width: 296px;
+  line-height: 60px;
+  text-align: center;
+}
+
+.confirm-button a {
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.cancel-button a {
+  text-decoration: none;
+  color: rgba(85, 85, 85, 1);
 }
 /* ------ CHECKOUT PAGE ------ */
 
