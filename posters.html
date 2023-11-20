@@ -1,168 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="main.css" />
-    <script type="module" src="main.js"></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Open+Sans:wght@400;600;700&family=Overpass+Mono&family=PT+Serif&display=swap"
-      rel="stylesheet"
-    />
-    <title>All Posters</title>
-  </head>
-  <body>
-    <my-header></my-header>
-    <main>
-      <div class="intro">
-        <h2>POSTERS</h2>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="main.css" />
+  <script type="module" src="main.js"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Open+Sans:wght@400;600;700&family=Overpass+Mono&family=PT+Serif&display=swap"
+    rel="stylesheet" />
+  <title>All Posters</title>
+</head>
+
+<body>
+  <my-header></my-header>
+  <main>
+    <div class="intro">
+      <h2>POSTERS</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+        minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        aliquip ex ea commodo consequat. Duis aute irure dolor in
+        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+        culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+    <div class="posters">
+      <div class="categories">
+        <h3 id="categories-head">CATEGORIES</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          SORT BY &nbsp;&nbsp;<img src="img/arrow.png" alt="downwards arrow" />&nbsp;&nbsp;FILTER &nbsp;&nbsp;<img
+            src="img/arrow.png" alt="downwards arrow" />
         </p>
+        <p>Black & White</p>
+        <p>Nature</p>
+        <p>Abstract</p>
+        <p>Photographs</p>
+        <p>Media</p>
       </div>
-      <div class="posters">
-        <div class="categories">
-          <h3 id="categories-head">CATEGORIES</h3>
-          <p>
-            SORT BY &nbsp;&nbsp;<img
-              src="img/arrow.png"
-              alt="downwards arrow"
-            />&nbsp;&nbsp;FILTER &nbsp;&nbsp;<img
-              src="img/arrow.png"
-              alt="downwards arrow"
-            />
-          </p>
-          <p>Black & White</p>
-          <p>Nature</p>
-          <p>Abstract</p>
-          <p>Photographs</p>
-          <p>Media</p>
+      <div class="poster-categories">
+        <div class="box">
+          <img src="img/the parc monceau 1878.jpg" alt="The Parc Monceau 1878 by Calude Monet" />
+          <figcaption>
+            <p class="artist">Claude Monet</p>
+            <p class="name">The Parc Monceau 1878</p>
+            <p>From €24</p>
+          </figcaption>
         </div>
-        <div class="poster-categories">
-          <div class="box">
-            <img
-              src="img/test-img.jpg"
-              alt="The Parc Monceau 1878 by Calude Monet"
-            />
-            <figcaption>
-              <p class="artist">Claude Monet</p>
-              <p class="name">The Parc Monceau 1878</p>
-              <p>From €24</p>
-            </figcaption>
-          </div>
-          <div class="box">
-            <img
-              src="img/test-img.jpg"
-              alt="Abstrakta Penseldrag 2 by Mareike Böhmer"
-            />
-            <figcaption>
-              <p class="artist">Mareike Böhmer</p>
-              <p class="name">Abstrakta Penseldrag 2</p>
-              <p>From €18</p>
-            </figcaption>
-          </div>
-          <div class="box">
-            <img src="img/test-img.jpg" alt="Body Electric by Vanellimelli" />
-            <figcaption>
-              <p class="artist">Vanellimelli</p>
-              <p class="name">Body Electric</p>
-              <p>From €18</p>
-            </figcaption>
-          </div>
-          <div class="box">
-            <a href="detail.html"><img src="img/test-img.jpg" alt="Tokyo Drift by Vanellimelli" /></a>
-            <figcaption>
-              <p class="artist">Vanellimelli</p>
-              <p class="name">Tokyo Drift</p>
-              <p>From €24</p>
-            </figcaption>
-          </div>
-          <div class="box">
-            <img
-              src="img/test-img.jpg"
-              alt="Sainte-Adresse 1867 by Calude Monet"
-            />
-            <figcaption>
-              <p class="artist">Claude Monet</p>
-              <p class="name">Sainte-Adresse 1867</p>
-              <p>From €24</p>
-            </figcaption>
-          </div>
-          <div class="box">
-            <img
-              src="img/test-img.jpg"
-              alt="Uppsatsstudier 13 by Mareike Böhmer"
-            />
-            <figcaption>
-              <p class="artist">Mareike Böhmer</p>
-              <p class="name">Uppsatsstudier 13</p>
-              <p>From €18</p>
-            </figcaption>
-          </div>
-          <div class="box">
-            <img
-              src="img/test-img.jpg"
-              alt="Abstrakta Penseldrag 7 by Mareike Böhmer"
-            />
-            <figcaption>
-              <p class="artist">Mareike Böhmer</p>
-              <p class="name">Abstrakta Penseldrag 7</p>
-              <p>From €32</p>
-            </figcaption>
-          </div>
-          <div class="box">
-            <img src="img/test-img.jpg" alt="Burning Desire by Vanellimelli" />
-            <figcaption>
-              <p class="artist">Vanellimelli</p>
-              <p class="name">Burning Desire</p>
-              <p>From €24</p>
-            </figcaption>
-          </div>
-          <div class="box">
-            <img src="img/test-img.jpg" alt="Monet Bouquet by Calude Monet" />
-            <figcaption>
-              <p class="artist">Claude Monet</p>
-              <p class="name"></p>Monet Bouquet</p>
-              <p>From €24</p>
-            </figcaption>
-          </div>
-          <div class="box">
-            <img
-              src="img/test-img.jpg"
-              alt="Morning On The Seine by Calude Monet"
-            />
-            <figcaption>
-              <p class="artist">Claude Monet</p>
-              <p class="name">Morning On The Seine</p>
-              <p>From €24</p>
-            </figcaption>
-          </div>
-          <div class="box">
-            <img src="img/test-img.jpg" alt="Grafik 210Y by Mareike Böhmer" />
-            <figcaption>
-              <p class="artist">Mareike Böhmer</p>
-              <p class="name">Grafik 210Y</p>
-              <p>From €18</p>
-            </figcaption>
-          </div>
-          <div class="box">
-            <img src="img/test-img.jpg" alt="Drive by Vanellimelli" />
-            <figcaption>
-              <p class="artist">Vanellimelli</p>
-              <p class="name">Drive</p>
-              <p>From €24</p>
-            </figcaption>
-          </div>
+        <div class="box">
+          <img src="img/abstrakta penseldrag 2.jpg" alt="Abstrakta Penseldrag 2 by Mareike Böhmer" />
+          <figcaption>
+            <p class="artist">Mareike Böhmer</p>
+            <p class="name">Abstrakta Penseldrag 2</p>
+            <p>From €18</p>
+          </figcaption>
+        </div>
+        <div class="box">
+          <img src="img/body electric.jpg" alt="Body Electric by Vanellimelli" />
+          <figcaption>
+            <p class="artist">Vanellimelli</p>
+            <p class="name">Body Electric</p>
+            <p>From €18</p>
+          </figcaption>
+        </div>
+        <div class="box">
+          <a href="detail.html"><img src="img/tokyo.jpg" alt="Tokyo Drift by Vanellimelli" /></a>
+          <figcaption>
+            <p class="artist">Vanellimelli</p>
+            <p class="name">Tokyo Drift</p>
+            <p>From €24</p>
+          </figcaption>
+        </div>
+        <div class="box">
+          <img src="img/sainte-adresse 1867.jpg" alt="Sainte-Adresse 1867 by Calude Monet" />
+          <figcaption>
+            <p class="artist">Claude Monet</p>
+            <p class="name">Sainte-Adresse 1867</p>
+            <p>From €24</p>
+          </figcaption>
+        </div>
+        <div class="box">
+          <img src="img/uppsatsstudier 13.jpg" alt="Uppsatsstudier 13 by Mareike Böhmer" />
+          <figcaption>
+            <p class="artist">Mareike Böhmer</p>
+            <p class="name">Uppsatsstudier 13</p>
+            <p>From €18</p>
+          </figcaption>
+        </div>
+        <div class="box">
+          <img src="img/abstrakta penseldrag 7.jpg" alt="Abstrakta Penseldrag 7 by Mareike Böhmer" />
+          <figcaption>
+            <p class="artist">Mareike Böhmer</p>
+            <p class="name">Abstrakta Penseldrag 7</p>
+            <p>From €32</p>
+          </figcaption>
+        </div>
+        <div class="box">
+          <img src="img/burning desire.jpg" alt="Burning Desire by Vanellimelli" />
+          <figcaption>
+            <p class="artist">Vanellimelli</p>
+            <p class="name">Burning Desire</p>
+            <p>From €24</p>
+          </figcaption>
+        </div>
+        <div class="box">
+          <img src="img/monet bouquet.jpg" alt="Monet Bouquet by Calude Monet" />
+          <figcaption>
+            <p class="artist">Claude Monet</p>
+            <p class="name"></p>Monet Bouquet</p>
+            <p>From €24</p>
+          </figcaption>
+        </div>
+        <div class="box">
+          <img src="img/morning on the seine.jpg" alt="Morning On The Seine by Calude Monet" />
+          <figcaption>
+            <p class="artist">Claude Monet</p>
+            <p class="name">Morning On The Seine</p>
+            <p>From €24</p>
+          </figcaption>
+        </div>
+        <div class="box">
+          <img src="img/grafik 210y.jpg" alt="Grafik 210Y by Mareike Böhmer" />
+          <figcaption>
+            <p class="artist">Mareike Böhmer</p>
+            <p class="name">Grafik 210Y</p>
+            <p>From €18</p>
+          </figcaption>
+        </div>
+        <div class="box">
+          <img src="img/drive.jpg" alt="Drive by Vanellimelli" />
+          <figcaption>
+            <p class="artist">Vanellimelli</p>
+            <p class="name">Drive</p>
+            <p>From €24</p>
+          </figcaption>
         </div>
       </div>
-    </main>
-    <my-footer></my-footer>
-  </body>
+    </div>
+  </main>
+  <my-footer></my-footer>
+</body>
+
 </html>
