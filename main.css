@@ -127,7 +127,36 @@ Remember to keep the code organized. */
 /* ------ PRODUCT PAGE ------ */
 
 /* ------ SHOPPING BAG PAGE ------ */
+.shoppingcart-page {
+  height: 1944px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.shoppingcart {
+  background-color: #fff;
+  width: 1314px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 35px;
+}
 
+.shoppingcart a img {
+  width: 220px;
+  height: 300px;
+}
+
+.shoppingcart .addmore {
+  width: 86px;
+}
+
+.liked img {
+  width: 30px;
+}
+hr {
+  border-top: 5px solid #333;
+}
 /* ------ CHECKOUT PAGE ------ */
 
 /* ------ THANK YOU PAGE ------ */
