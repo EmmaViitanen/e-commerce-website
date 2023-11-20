@@ -1,7 +1,7 @@
 /* In this CSS file we write the code for the main section in the body.
 Remember to keep the code organized. */
 
-/* All pages */
+/* ------ ALL PAGES ------ */
 .intro {
   display: flex;
   flex-direction: column;
@@ -16,18 +16,65 @@ Remember to keep the code organized. */
   width: 730px;
 }
 
-/* ABOUT page */
-.sub-head {
-  padding: 90px 0 10px 0;
-  font-weight: bold;
+/* ------ HOME PAGE ------ */
+.homepage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 3750px;
 }
 
-.about {
-  width: 1052px;
-  padding-bottom: 100px;
+.homepage a {
+  text-decoration: none;
+  color: #333;
 }
 
-/* Posters */
+.front-img img {
+  height: 818px;
+  width: 100%;
+}
+
+.middle-img a img {
+  height: 818px;
+  width: 100%;
+  padding-top: 80px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 40px;
+  align-items: first baseline;
+  padding-top: 80px;
+}
+
+.container-opt a img {
+  width: 430px;
+  height: 600px;
+}
+
+.container-opt a figcaption {
+  width: 430px;
+  padding-top: 20px;
+}
+
+.container2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 50px;
+  padding-top: 80px;
+}
+
+.container-opt2 a img {
+  width: 653px;
+  height: 863px;
+}
+
+.container-opt2 figcaption p {
+  font-size: 20px;
+}
+
+/* ------ POSTERS PAGE ------ */
 .posters {
   margin-top: 20px;
   display: flex;
@@ -38,7 +85,10 @@ Remember to keep the code organized. */
   font-weight: 400;
 }
 
-.categories img {
+.options p {
+  padding-top: 20px;
+}
+.options img {
   height: 15px;
 }
 
@@ -74,7 +124,13 @@ Remember to keep the code organized. */
   font-weight: 600;
 }
 
-/* THANK YOU PAGE */
+/* ------ PRODUCT PAGE ------ */
+
+/* ------ SHOPPING BAG PAGE ------ */
+
+/* ------ CHECKOUT PAGE ------ */
+
+/* ------ THANK YOU PAGE ------ */
 .thanx {
   height: 838px;
   display: flex;
@@ -87,6 +143,57 @@ Remember to keep the code organized. */
 }
 .thanx h3 {
   line-height: 60px;
+}
+
+/* ------ ARTISTS PAGE ------ */
+.artist-page {
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.artists {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: first baseline;
+  column-gap: 50px;
+  padding-top: 50px;
+}
+
+.artist {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.artist figcaption {
+  width: 410px;
+  text-align: center;
+}
+
+.artist img {
+  width: 410px;
+  height: 520px;
+  padding-bottom: 10px;
+}
+
+.artist figcaption .read-more {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+/* ------ ABOUT PAGE ------ */
+.sub-head {
+  padding: 90px 0 10px 0;
+  font-weight: bold;
+}
+
+.about {
+  width: 1052px;
+  padding-bottom: 100px;
 }
 
 /* CONTACT PAGE */
