@@ -21,7 +21,7 @@ Remember to keep the code organized. */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 3650px;
+  height: 3736px;
 }
 
 .homepage a {
@@ -29,14 +29,15 @@ Remember to keep the code organized. */
   color: #333;
 }
 
-.front-img {
-  height: 818px;
+.front-img img {
+  height: auto;
   width: 100%;
   top: 0;
+  text-align: center;
 }
 
 .middle-img a img {
-  height: 818px;
+  height: auto;
   width: 100%;
   padding-top: 80px;
 }
@@ -78,17 +79,17 @@ Remember to keep the code organized. */
 /* ------ POSTERS PAGE ------ */
 
 .intro-posters {
-  height: 417px;
+  width: 100%;
   background-color: rgba(201, 200, 198, 1);
 }
-.emptyspace {
-  height: 110px;
-  width: 100%;
-  color: rgba(201, 200, 198, 1);
-}
+
 .intro-img {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-top: 117px;
   bottom: 0;
-  height: 300px;
+  height: auto;
 }
 
 .posters {
