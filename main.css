@@ -1,7 +1,7 @@
 /* In this CSS file we write the code for the main section in the body.
 Remember to keep the code organized. */
 
-/* All pages */
+/* ------ ALL PAGES ------ */
 .intro {
   display: flex;
   flex-direction: column;
@@ -16,18 +16,65 @@ Remember to keep the code organized. */
   width: 730px;
 }
 
-/* ABOUT page */
-.sub-head {
-  padding: 90px 0 10px 0;
-  font-weight: bold;
+/* ------ HOME PAGE ------ */
+.homepage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 3750px;
 }
 
-.about {
-  width: 1052px;
-  padding-bottom: 100px;
+.homepage a {
+  text-decoration: none;
+  color: #333;
 }
 
-/* Posters */
+.front-img img {
+  height: 818px;
+  width: 100%;
+}
+
+.middle-img a img {
+  height: 818px;
+  width: 100%;
+  padding-top: 80px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 40px;
+  align-items: first baseline;
+  padding-top: 80px;
+}
+
+.container-opt a img {
+  width: 430px;
+  height: 600px;
+}
+
+.container-opt a figcaption {
+  width: 430px;
+  padding-top: 20px;
+}
+
+.container2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 50px;
+  padding-top: 80px;
+}
+
+.container-opt2 a img {
+  width: 653px;
+  height: 863px;
+}
+
+.container-opt2 figcaption p {
+  font-size: 20px;
+}
+
+/* ------ POSTERS PAGE ------ */
 .posters {
   margin-top: 20px;
   display: flex;
@@ -38,7 +85,10 @@ Remember to keep the code organized. */
   font-weight: 400;
 }
 
-.categories img {
+.options p {
+  padding-top: 20px;
+}
+.options img {
   height: 15px;
 }
 
@@ -74,7 +124,124 @@ Remember to keep the code organized. */
   font-weight: 600;
 }
 
-/* THANK YOU PAGE */
+/* ------ PRODUCT PAGE ------ */
+
+/* ------ SHOPPING BAG PAGE ------ */
+.shoppingcart-page {
+  height: 1944px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.shoppingcart-page h2 {
+  padding-bottom: 40px;
+}
+.shoppingcart {
+  background-color: #fff;
+  width: 1314px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 35px;
+  padding: 50px 0px 50px 0px;
+}
+
+.shoppingcart a img {
+  width: 220px;
+  height: 300px;
+}
+
+.shoppingcart .addmore {
+  width: 86px;
+}
+
+.liked img {
+  width: 30px;
+}
+hr {
+  border-top: 5px solid #333;
+}
+
+.confirm-button {
+  background-color: rgba(173, 169, 161, 0.5);
+  height: 60px;
+  width: 296px;
+  line-height: 60px;
+  text-align: center;
+}
+
+.confirm-button a {
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.cancel-button a {
+  text-decoration: none;
+  color: rgba(85, 85, 85, 1);
+}
+/* ------ CHECKOUT PAGE ------ */
+.checkout-page {
+  height: 2000px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+  justify-content: center;
+  padding-top: 150px;
+}
+
+form {
+  width: 672px;
+}
+
+#phonenumber {
+  background-color: red;
+}
+
+/* The following 7 lines was adapted from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_circles Accessed 2023-11-20 */
+.dot {
+  height: 40px;
+  width: 40px;
+  background-color: rgba(217, 217, 217, 1);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.payement {
+  background-color: #fff;
+  width: 1233px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 100px;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 0px 25px 0px;
+}
+
+.payement-img img {
+  height: 54px;
+}
+
+.card-payement-img img {
+  height: 40px;
+}
+
+.shipping {
+  background-color: #fff;
+  width: 1233px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 25px 0px 25px 0px;
+  justify-content: center;
+  align-items: center;
+}
+
+.shipping-img img {
+  height: 40px;
+}
+
+/* ------ THANK YOU PAGE ------ */
 .thanx {
   height: 838px;
   display: flex;
@@ -87,6 +254,57 @@ Remember to keep the code organized. */
 }
 .thanx h3 {
   line-height: 60px;
+}
+
+/* ------ ARTISTS PAGE ------ */
+.artist-page {
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.artists {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: first baseline;
+  column-gap: 50px;
+  padding-top: 50px;
+}
+
+.artist {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.artist figcaption {
+  width: 410px;
+  text-align: center;
+}
+
+.artist img {
+  width: 410px;
+  height: 520px;
+  padding-bottom: 10px;
+}
+
+.artist figcaption .read-more {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+/* ------ ABOUT PAGE ------ */
+.sub-head {
+  padding: 90px 0 10px 0;
+  font-weight: bold;
+}
+
+.about {
+  width: 1052px;
+  padding-bottom: 100px;
 }
 
 /* CONTACT PAGE */

@@ -13,7 +13,7 @@ class MinHeader extends HTMLElement {
                   <div class="pages">
                     <ul>
                         <a href="posters.html">POSTERS</<>
-                        <a href="about.html">ABOUT</a>
+                        <a href="artists.html">ARTISTS</a>
                     </ul>
                   </div>
                   <div class="logo">
