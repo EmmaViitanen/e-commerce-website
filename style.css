@@ -75,6 +75,12 @@ a:hover {
   padding-right: 50px;
 }
 
+.logo img {
+  width: 5rem;
+  height: 3rem;
+  padding-top: 10px;
+}
+
 .icons a {
   padding-left: 50px;
 }

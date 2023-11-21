@@ -18,7 +18,7 @@ class MinHeader extends HTMLElement {
                   </div>
                   <div class="logo">
                     <ul>
-                        <a href="index.html"><img src="img/logo.svg"></a>
+                        <a href="index.html"><img src="img/logo-code.svg"></a>
                     </ul>
                   </div>
                   <div class="icons">
