@@ -124,6 +124,10 @@ Remember to keep the code organized. */
   font-weight: 600;
 }
 
+.arrow {
+  width: 12px;
+}
+
 /* ------ PRODUCT PAGE ------ */
 
 /* ------ SHOPPING BAG PAGE ------ */
