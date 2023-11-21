@@ -28,6 +28,10 @@ h3 {
   font-weight: 600;
 }
 
+a:hover {
+  font-weight: 600;
+}
+
 /* NAVBAR */
 /* The following 6 lines was adapted by https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_fixed_menu Accessed 2023-11-18 */
 nav {
@@ -48,11 +52,9 @@ nav {
 
 .nav2 {
   background: rgba(173, 169, 161, 0.5);
-  height: 79px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  text-align: center;
+  height: 80px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .nav2 a {
@@ -60,10 +62,6 @@ nav {
   color: #333;
   font-size: 1rem;
   line-height: 79px;
-}
-
-a:hover {
-  font-weight: 600;
 }
 
 .nav2 img {
