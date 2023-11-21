@@ -229,6 +229,10 @@ form {
   display: inline-block;
 }
 
+.dot:hover {
+  background-color: rgba(85, 85, 85, 0.5);
+}
+
 .payement {
   background-color: #fff;
   width: 1233px;
