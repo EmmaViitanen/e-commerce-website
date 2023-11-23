@@ -392,3 +392,130 @@ input[type="submit"] {
   margin: 4px 2px;
   cursor: pointer;
 }
+
+/* ------ MEDIA QUERIES ------ */
+/* Small devices (phones) */
+@media only screen and (min-width: 375px) {
+  .intro-img {
+    padding-top: 0px;
+  }
+
+  .poster-categories {
+    margin-top: 54px;
+    margin-bottom: 170px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 20px;
+  }
+
+  .posters {
+    margin-top: 10px;
+  }
+
+  .options p {
+    padding-top: 20px;
+  }
+  .options img {
+    height: 15px;
+  }
+
+  .box {
+    width: 180px;
+    height: 310px;
+  }
+
+  .box img {
+    width: 180px;
+    height: 230px;
+  }
+
+  .box figcaption {
+    padding-left: 13px;
+  }
+
+  .box figcaption .artist {
+    font-size: 0.9rem;
+  }
+
+  .box figcaption .name {
+    font-weight: 600;
+  }
+
+  .arrow {
+    width: 12px;
+  }
+}
+
+/* Medium devices (tablets) */
+@media only screen and (min-width: 600px) {
+}
+/* Larger devices (computers and desktops) */
+@media only screen and (min-width: 1200px) {
+  .intro-posters {
+    width: 100%;
+    background-color: rgba(201, 200, 198, 1);
+  }
+
+  .intro-img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 300px;
+    bottom: 0;
+    height: auto;
+  }
+
+  .posters {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #categories-head {
+    font-weight: 400;
+  }
+
+  .options p {
+    padding-top: 20px;
+  }
+  .options img {
+    height: 15px;
+  }
+
+  .poster-categories {
+    margin-top: 54px;
+    margin-bottom: 170px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 31px;
+    row-gap: 34px;
+  }
+
+  .box {
+    background: rgba(255, 255, 255, 1);
+    width: 320px;
+    height: 418px;
+  }
+
+  .box img {
+    width: 320px;
+    height: 341px;
+  }
+
+  .box figcaption {
+    padding-left: 13px;
+  }
+
+  .box figcaption .artist {
+    font-size: 0.9rem;
+  }
+
+  .box figcaption .name {
+    font-weight: 600;
+  }
+
+  .arrow {
+    width: 12px;
+  }
+}
