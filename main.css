@@ -409,8 +409,18 @@ input[type="submit"] {
 /* ------ MEDIA QUERIES ------ */
 /* Small devices (phones) */
 @media only screen and (min-width: 375px) {
-  .intro-img {
-    padding-top: 0px;
+  /* POSTERS PAGE */
+  .categories {
+    display: none;
+  }
+
+  .box {
+    width: 180px;
+    height: 310px;
+  }
+  .box img {
+    width: 180px;
+    height: 230px;
   }
 
   .poster-categories {
@@ -426,21 +436,15 @@ input[type="submit"] {
     margin-top: 10px;
   }
 
+  .intro-img {
+    padding-top: 0px;
+  }
+
   .options p {
     padding-top: 20px;
   }
   .options img {
     height: 15px;
-  }
-
-  .box {
-    width: 180px;
-    height: 310px;
-  }
-
-  .box img {
-    width: 180px;
-    height: 230px;
   }
 
   .box figcaption {
@@ -465,6 +469,16 @@ input[type="submit"] {
 }
 /* Larger devices (computers and desktops) */
 @media only screen and (min-width: 1200px) {
+  /* POSTERS PAGE */
+  .categories {
+    display: contents;
+    display: inline-block;
+    padding-top: 50px;
+  }
+  .categories p {
+    padding-bottom: 20px;
+  }
+
   .intro-posters {
     width: 100%;
     background-color: rgba(201, 200, 198, 1);
@@ -507,13 +521,13 @@ input[type="submit"] {
 
   .box {
     background: rgba(255, 255, 255, 1);
-    width: 320px;
-    height: 418px;
+    width: 350px;
+    height: 480px;
   }
 
   .box img {
-    width: 320px;
-    height: 341px;
+    width: 350px;
+    height: 390px;
   }
 
   .box figcaption {

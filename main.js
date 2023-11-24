@@ -5,7 +5,7 @@ class MinHeader extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
         <header>
-            <nav>
+            <nav class="desktop">
                 <div class="nav1">
                     <p>Fast and flexible delivery worldwide</p>
                 </div>
@@ -31,7 +31,6 @@ class MinHeader extends HTMLElement {
                   </div>
                 </div>
             <nav>
-      
         </header>    
             `;
   }
