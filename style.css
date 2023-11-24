@@ -288,4 +288,46 @@ footer a {
   .icons a {
     padding-left: 50px;
   }
+
+  footer {
+    background-color: rgba(217, 217, 217, 1);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 463px;
+    align-items: center;
+    padding-left: 40px;
+  }
+
+  footer a {
+    text-decoration: none;
+    color: #333;
+  }
+
+  .footer-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 100px;
+  }
+  .footer-links p {
+    line-height: 30px;
+  }
+  .footer-links h3 {
+    line-height: 50px;
+  }
+
+  .footer-icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 100px;
+  }
+
+  .icon-column {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 70px;
+  }
+
+  .footer-icons img {
+    height: 45px;
+  }
 }

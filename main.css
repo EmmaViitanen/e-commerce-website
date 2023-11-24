@@ -203,7 +203,7 @@ hr {
 
 /* ------ CHECKOUT PAGE ------ */
 .checkout-page {
-  height: 1944px;
+  height: 2350px;
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
@@ -211,12 +211,19 @@ hr {
   padding-top: 150px;
 }
 
-form .input input {
+.checkout-page form {
+  padding-top: 50px;
+}
+
+form .input input,
+select {
   width: 672px;
   height: 60px;
 }
 
-.input input[type="text"] {
+.input input[type="text"],
+input[type="email"],
+input[type="tel"] {
   border: 1px solid #333;
   padding-left: 20px;
 }
@@ -226,8 +233,12 @@ form .input input {
   flex-direction: row;
 }
 
-.input2 input[type="tel"],
-input[type="email"] {
+#fname,
+#lname,
+#pnumber,
+#city,
+#expire,
+#security-code {
   width: 336px;
   height: 60px;
   border: 1px solid #333;
@@ -239,17 +250,22 @@ input[type="email"] {
   padding-bottom: 20px;
 }
 
-/* The following 7 lines was adapted from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_circles Accessed 2023-11-20 */
-.dot {
+#card-info {
+  height: 200px;
+  padding: 50px 50px 50px 50px;
+}
+
+#card-info form {
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+
+input[type="radio"] {
   height: 40px;
   width: 40px;
   background-color: rgba(217, 217, 217, 1);
   border-radius: 50%;
-  display: inline-block;
-}
-
-.dot:hover {
-  background-color: rgba(85, 85, 85, 0.5);
+  border: 2px solid white;
 }
 
 .payement,
@@ -263,15 +279,12 @@ input[type="email"] {
   border-bottom: 1px solid #333;
 }
 
-.payement-img img {
+.payement img {
   height: 54px;
 }
 
-.card-payement-img img {
-  height: 40px;
-}
-
-.shipping-img img {
+.card-payement-img img,
+.shipping img {
   height: 40px;
 }
 

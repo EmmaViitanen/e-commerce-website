@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="main.css" />
-    <script type="module" src="main.js"></script>
+    <script src="main.js" defer></script>
+    <script src="functions.js" defer></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Open+Sans:wght@400;600;700&family=Overpass+Mono&family=PT+Serif&display=swap"
       rel="stylesheet"
@@ -19,9 +20,35 @@
         <h2>CHECK OUT</h2>
         <form>
           <div class="input">
-            <input type="text" id="fname" placeholder="Full Name" />
+            <!-- The following 15 lines of code was adapted from https://www.w3schools.com/html/tryit.asp?filename=tryhtml_elem_select_pre Accessed: 2023-11-24 -->
+            <select>
+              <option value="country">Choose your country</option>
+              <option value="sweden">Sweden</option>
+              <option value="denmark">Denmark</option>
+              <option value="Norway">Norway</option>
+              <option value="finland">Finland</option>
+              <option value="uk">United Kingdom</option>
+              <option value="usa">USA</option>
+              <option value="canada">Canada</option>
+              <option value="china">China</option>
+              <option value="germany">Germany</option>
+              <option value="france">France</option>
+              <option value="spain">Spain</option>
+              <option value="italy">Italy</option>
+            </select>
           </div>
           <div class="input2">
+            <input type="text" id="fname" placeholder="First Name" />
+            <input type="text" id="lname" placeholder="Last Name" />
+          </div>
+          <div class="input">
+            <input type="text" id="adress" placeholder="Adress  " />
+          </div>
+          <div class="input2">
+            <input type="text" id="pnumber" placeholder="Post Number" />
+            <input type="text" id="city" placeholder="City" />
+          </div>
+          <div class="input">
             <input type="email" id="email" placeholder="E-Mail" />
             <input type="tel" id="phonenumber " placeholder="Phone Number" />
           </div>
@@ -29,42 +56,52 @@
         <div class="pay">
           <h3>PAYEMENT</h3>
           <div class="payement">
-            <!-- The following 1 line was adapted from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_circles Accessed 2023-11-20 -->
-            <span class="dot"></span>
-            <div class="payement-opt">
-              <h3>Klarna</h3>
-              <p>Pay in</p>
-              <p>in 30 days</p>
-            </div>
-            <div class="payement-img">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Klarna_Payment_Badge.svg/1280px-Klarna_Payment_Badge.svg.png"
-                alt="Klarna"
-              />
-            </div>
+            <!-- The following 10 lines of code was adapted from https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_radio Accessed: 2023-11-20 -->
+            <input
+              type="radio"
+              id="klarna1"
+              name="pay-alternatives"
+              value="Klarna"
+            />
+            <label class="payement-opt" for="klarna1"
+              ><h3>Klarna</h3>
+              <p>Pay in 30 days</p></label
+            >
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Klarna_Payment_Badge.svg/1280px-Klarna_Payment_Badge.svg.png"
+              alt="Klarna"
+            />
           </div>
           <div class="payement">
-            <!-- The following 1 line was adapted from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_circles Accessed 2023-11-20 -->
-            <span class="dot"></span>
-            <div class="payement-opt">
-              <h3>Klarna</h3>
+            <!-- The following 11 lines of code was adapted from https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_radio Accessed: 2023-11-20 -->
+            <input
+              type="radio"
+              id="klarna2"
+              name="pay-alternatives"
+              value="Klarna"
+            />
+            <label class="payement-opt" for="klarna2"
+              ><h3>Klarna</h3>
               <p>Pay in 3</p>
-              <p>instalments</p>
-            </div>
-            <div class="payement-img">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Klarna_Payment_Badge.svg/1280px-Klarna_Payment_Badge.svg.png"
-                alt="Klarna"
-              />
-            </div>
+              <p>installments</p></label
+            >
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Klarna_Payment_Badge.svg/1280px-Klarna_Payment_Badge.svg.png"
+              alt="Klarna"
+            />
           </div>
           <div class="payement">
-            <!-- The following 1 line was adapted from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_circles Accessed 2023-11-20 -->
-            <span class="dot"></span>
-            <div class="payement-opt">
-              <h3>Card</h3>
-              <p>Pay now</p>
-            </div>
+            <!-- The following 10 lines of code was adapted from https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_radio Accessed: 2023-11-20 -->
+            <input
+              type="radio"
+              id="card"
+              name="pay-alternatives"
+              value="Card"
+            />
+            <label for="card"
+              ><h3>Card</h3>
+              <p>Pay now &nbsp;&nbsp;&nbsp;</p></label
+            >
             <div class="card-payement-img">
               <img
                 src="https://1000logos.net/wp-content/uploads/2017/03/Mastercard-logo.png"
@@ -83,92 +120,120 @@
                 alt="American Express"
               />
             </div>
+            <div id="card-info">
+              <form>
+                <div class="input">
+                  <input
+                    type="text"
+                    id="card-number"
+                    placeholder="Card Number"
+                  />
+                </div>
+                <div class="input2">
+                  <input
+                    type="text"
+                    id="expire"
+                    placeholder="Expire Date (MM/YY)"
+                  />
+                  <input
+                    type="text"
+                    id="security-code"
+                    placeholder="security-code"
+                  />
+                </div>
+              </form>
+            </div>
           </div>
           <div class="payement">
-            <!-- The following 1 line was adapted from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_circles Accessed 2023-11-20 -->
-            <span class="dot"></span>
-            <div class="payement-opt">
-              <h3>PayPal</h3>
-            </div>
-            <div class="payement-img">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Paypal_2014_logo.png"
-                alt="Paypal"
-              />
-            </div>
+            <!-- The following 9 lines of code was adapted from https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_radio Accessed: 2023-11-20 -->
+            <input
+              type="radio"
+              id="paypal"
+              name="pay-alternatives"
+              value="PayPal"
+            />
+            <label for="paypal">
+              <h3>PayPal &nbsp;&nbsp;&nbsp;</h3>
+            </label>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Paypal_2014_logo.png"
+              alt="Paypal"
+            />
           </div>
         </div>
         <div class="ship">
           <h3>SHIPPING</h3>
           <div class="shipping">
-            <!-- The following 1 line was adapted from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_circles Accessed 2023-11-20 -->
-            <span class="dot"></span>
-            <div class="shipping-opt">
+            <!-- The following 5 lines of code was adapted from https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_radio Accessed: 2023-11-20 -->
+            <input type="radio" id="dhl" name="shipping-alt" value="DHL" />
+            <label for="dhl">
               <h3>DHL</h3>
               <p>Free shipping</p>
-            </div>
-            <div class="shipping-img">
-              <img
-                src="https://fikakassan.se/wp-content/uploads/2020/10/dhl-1-logo.png"
-                alt="DHL"
-              />
-            </div>
+            </label>
+            <img
+              src="https://fikakassan.se/wp-content/uploads/2020/10/dhl-1-logo.png"
+              alt="DHL"
+            />
           </div>
           <div class="shipping">
-            <!-- The following 1 line was adapted from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_circles Accessed 2023-11-20 -->
-            <span class="dot"></span>
-            <div class="shipping-opt">
+            <!-- The following 5 lines of code was adapted from https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_radio Accessed: 2023-11-20 -->
+            <input type="radio" id="fedex" name="shipping-alt" value="FedEx" />
+            <label for="fedex">
               <h3>FedEx</h3>
               <p>Free shipping</p>
-            </div>
-            <div class="shipping-img">
-              <img
-                src="https://cdn.freebiesupply.com/logos/large/2x/fedex-express-6-logo-png-transparent.png"
-                alt="FedEx"
-              />
-            </div>
+            </label>
+            <img
+              src="https://cdn.freebiesupply.com/logos/large/2x/fedex-express-6-logo-png-transparent.png"
+              alt="FedEx"
+            />
           </div>
           <div class="shipping">
-            <!-- The following 1 line was adapted from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_circles Accessed 2023-11-20 -->
-            <span class="dot"></span>
-            <div class="shipping-opt">
+            <!-- The following 5 lines of code was adapted from https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_radio Accessed: 2023-11-20 -->
+            <input type="radio" id="ups" name="shipping-alt" value="UPS" />
+            <label for="ups">
               <h3>UPS</h3>
               <p>Free shipping</p>
-            </div>
-            <div class="shipping-img">
-              <img
-                src="https://cdn.freebiesupply.com/logos/large/2x/ups-logo-png-transparent.png"
-                alt="UPS"
-              />
-            </div>
+            </label>
+            <img
+              src="https://cdn.freebiesupply.com/logos/large/2x/ups-logo-png-transparent.png"
+              alt="UPS"
+            />
           </div>
           <div class="shipping">
-            <!-- The following 1 line was adapted from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_circles Accessed 2023-11-20 -->
-            <span class="dot"></span>
-            <div class="shipping-opt">
+            <!-- The following 5 lines of code was adapted from https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_radio Accessed: 2023-11-20 -->
+            <input
+              type="radio"
+              id="postnord"
+              name="shipping-alt"
+              value="Postnord"
+            />
+            <label for="postnord">
+              <!-- The following 5 lines of code was adapted from https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_radio Accessed: 2023-11-20 -->
               <h3>Postnord</h3>
               <p>Free shipping</p>
-            </div>
-            <div class="shipping-img">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/PostNord_wordmark.svg/2560px-PostNord_wordmark.svg.png"
-                alt="Postnord"
-              />
-            </div>
+            </label>
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/PostNord_wordmark.svg/2560px-PostNord_wordmark.svg.png"
+              alt="Postnord"
+            />
           </div>
           <div class="shipping">
-            <!-- The following 1 line was adapted from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_circles Accessed 2023-11-20 -->
-            <span class="dot"></span>
-            <div class="shipping-opt">
+            <!-- The following 5 lines of code was adapted from https://www.w3schools.com/html/tryit.asp?filename=tryhtml_input_radio Accessed: 2023-11-20 -->
+            <input
+              type="radio"
+              id="schenker"
+              name="shipping-alt"
+              value="Schenker"
+            />
+            <label for="schenker">
               <h3>Schenker</h3>
               <p>Free shipping</p>
-            </div>
-            <div class="shipping-img">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Logo_DB_Schenker.svg/2560px-Logo_DB_Schenker.svg.png"
-                alt="Schenker"
-              />
-            </div>
+            </label>
+
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Logo_DB_Schenker.svg/2560px-Logo_DB_Schenker.svg.png"
+              alt="Schenker"
+            />
           </div>
         </div>
         <div class="buttons">
