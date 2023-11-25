@@ -5,7 +5,8 @@ Remember to keep the code organized. */
 .homepage,
 .shoppingcart-page,
 .thanx,
-.intro {
+.intro,
+.artist-page {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -80,13 +81,11 @@ Remember to keep the code organized. */
   display: flex;
   justify-content: center;
   width: 100%;
-  padding-top: 117px;
   bottom: 0;
   height: auto;
 }
 
 .posters {
-  margin-top: 20px;
   display: flex;
   justify-content: space-between;
 }
@@ -223,7 +222,14 @@ select {
 
 .input input[type="text"],
 input[type="email"],
-input[type="tel"] {
+input[type="tel"],
+select option,
+#fname,
+#lname,
+#pnumber,
+#city,
+#expire,
+#security-code {
   border: 1px solid #333;
   padding-left: 20px;
 }
@@ -241,7 +247,6 @@ input[type="tel"] {
 #security-code {
   width: 336px;
   height: 60px;
-  border: 1px solid #333;
   padding-left: 20px;
 }
 
@@ -300,23 +305,6 @@ input[type="radio"] {
 }
 
 /* ------ ARTISTS PAGE ------ */
-.artist-page {
-  height: 1000px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: 50px;
-}
-
-.artists {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  align-items: first baseline;
-  column-gap: 50px;
-  padding-top: 50px;
-}
-
 .artist {
   display: flex;
   flex-direction: column;
@@ -324,19 +312,11 @@ input[type="radio"] {
 }
 
 .artist figcaption {
-  width: 410px;
   text-align: center;
-}
-
-.artist img {
-  width: 410px;
-  height: 520px;
-  padding-bottom: 10px;
 }
 
 .artist figcaption .read-more {
   text-decoration: underline;
-  font-weight: 600;
 }
 
 /* ------ ABOUT PAGE ------ */
@@ -409,6 +389,8 @@ input[type="submit"] {
 /* ------ MEDIA QUERIES ------ */
 /* Small devices (phones) */
 @media only screen and (min-width: 375px) {
+  /* HOME PAGE */
+
   /* POSTERS PAGE */
   .categories {
     display: none;
@@ -462,52 +444,41 @@ input[type="submit"] {
   .arrow {
     width: 12px;
   }
+
+  /* ARTIST PAGE */
+  .artist-page {
+    height: 2350px;
+    padding-top: 50px;
+  }
+
+  .artists {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: first baseline;
+    row-gap: 50px;
+    padding-top: 50px;
+  }
+
+  .artist figcaption {
+    width: 20rem;
+  }
+
+  .artist img {
+    width: 25em;
+    height: auto;
+    padding-bottom: 10px;
+  }
+
+  .artist figcaption .read-more {
+    font-weight: 600;
+  }
 }
 
 /* Medium devices (tablets) */
 @media only screen and (min-width: 600px) {
-}
-/* Larger devices (computers and desktops) */
-@media only screen and (min-width: 1200px) {
-  /* POSTERS PAGE */
+  /* POSTER PAGE */
   .categories {
-    display: contents;
-    display: inline-block;
-    padding-top: 50px;
-  }
-  .categories p {
-    padding-bottom: 20px;
-  }
-
-  .intro-posters {
-    width: 100%;
-    background-color: rgba(201, 200, 198, 1);
-  }
-
-  .intro-img {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding-top: 300px;
-    bottom: 0;
-    height: auto;
-  }
-
-  .posters {
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  #categories-head {
-    font-weight: 400;
-  }
-
-  .options p {
-    padding-top: 20px;
-  }
-  .options img {
-    height: 15px;
+    display: none;
   }
 
   .poster-categories {
@@ -542,7 +513,98 @@ input[type="submit"] {
     font-weight: 600;
   }
 
+  /* ARTIST PAGE */
+  .artist-page {
+    height: 900px;
+    padding-top: 50px;
+  }
+
+  .artists {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: first baseline;
+    column-gap: 50px;
+    padding-top: 50px;
+  }
+
+  .artist figcaption {
+    width: 13rem;
+  }
+
+  .artist img {
+    width: 15rem;
+    height: auto;
+    padding-bottom: 10px;
+  }
+
+  .artist figcaption .read-more {
+    font-weight: 600;
+  }
+}
+/* Larger devices (computers and desktops) */
+@media only screen and (min-width: 1300px) {
+  /* POSTERS PAGE */
+  .categories {
+    display: contents;
+    display: inline-block;
+    padding-top: 50px;
+  }
+  .categories p {
+    padding-bottom: 20px;
+  }
+
+  .intro-posters {
+    width: 100%;
+  }
+
+  .intro-img {
+    padding-top: 117px;
+  }
+
+  .posters {
+    margin-top: 20px;
+  }
+
+  #categories-head {
+    font-weight: 400;
+  }
+
+  .options p {
+    padding-top: 20px;
+  }
+  .options img {
+    height: 15px;
+  }
+
   .arrow {
     width: 12px;
+  }
+
+  /* ARTIST PAGE */
+  .artist-page {
+    height: 1000px;
+    padding-top: 50px;
+  }
+
+  .artists {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: first baseline;
+    column-gap: 50px;
+    padding-top: 50px;
+  }
+
+  .artist figcaption {
+    width: 410px;
+  }
+
+  .artist img {
+    width: 410px;
+    height: 520px;
+    padding-bottom: 10px;
+  }
+
+  .artist figcaption .read-more {
+    font-weight: 600;
   }
 }
