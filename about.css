@@ -1,0 +1,72 @@
+/* ====== ABOUT PAGE ====== */
+.intro {
+  height: 504px;
+  width: 100%;
+  background-color: rgba(201, 200, 198, 1);
+  text-align: center;
+}
+
+.intro p {
+  width: 730px;
+}
+
+.sub-head {
+  padding: 90px 0 10px 0;
+  font-weight: bold;
+}
+
+.about {
+  padding-bottom: 100px;
+}
+
+.about p {
+  width: 50rem;
+}
+
+@media only screen and (min-width: 375px) {
+  .about-page {
+    height: 1265px;
+  }
+  .intro {
+    padding: 50px 20px 50px 20px;
+  }
+
+  .about {
+    padding: 50px 20px 0 20px;
+  }
+
+  .about .sub-head {
+    width: 100%;
+    padding-top: 50px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+}
+
+@media only screen and (min-width: 1300px) {
+  /* ====== ABOUT PAGE ====== */
+  .about-page {
+    height: auto;
+  }
+  .intro {
+    height: 504px;
+    width: 100%;
+  }
+
+  .intro p {
+    width: 730px;
+  }
+
+  .sub-head {
+    padding: 90px 0 10px 0;
+  }
+
+  .about {
+    padding-bottom: 100px;
+  }
+
+  .about p {
+    width: 50rem;
+  }
+}

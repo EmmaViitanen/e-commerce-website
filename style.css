@@ -29,6 +29,20 @@ a:hover {
   font-weight: 600;
 }
 
+.homepage,
+.shoppingcart-page,
+.thanx,
+.intro,
+.artist-page,
+.about-page,
+.contact-page,
+.artist-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /* NAVBAR */
 /* The following 6 lines was adapted by https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_fixed_menu Accessed 2023-11-18 */
 nav {
@@ -108,7 +122,6 @@ footer {
   background-color: rgba(217, 217, 217, 1);
   display: grid;
   align-items: center;
-  height: auto 0;
   width: 100%;
 }
 
@@ -144,7 +157,7 @@ footer a {
     font-size: 14px;
   }
 
-  /* ------ NAVBAR ------ */
+  /* ====== NAVBAR ====== */
   .desktop {
     display: none;
   }
@@ -171,7 +184,7 @@ footer a {
 
   .logo img {
     width: 5rem;
-    height: 3rem;
+    height: auto;
     padding-top: 10px;
   }
 
@@ -229,7 +242,7 @@ footer a {
     font-size: 16px;
   }
 
-  /* ------ NAVBAR ------ */
+  /* ====== NAVBAR ======= */
   .desktop {
     display: none;
   }
@@ -267,19 +280,20 @@ footer a {
 
   .logo img {
     width: 5rem;
-    height: 3rem;
+    height: auto;
     padding-top: 10px;
   }
 
   .icons a {
     padding-left: 50px;
   }
-  /* FOOTER */
+
+  /* ====== FOOTER ====== */
   .footer-icons .icon-column {
     display: contents;
     display: grid;
     grid-template-columns: 1fr;
-    row-gap: 70px;
+    padding-top: 70px;
   }
 
   .footer-icons2 {
@@ -289,6 +303,7 @@ footer a {
   footer {
     padding: 0px;
     grid-template-columns: 1fr;
+    row-gap: 70px;
   }
 
   footer a {
@@ -300,6 +315,7 @@ footer a {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 80px;
+    padding-top: 70px;
   }
   .footer-links p {
     line-height: 30px;
@@ -340,7 +356,7 @@ footer a {
     font-size: 20px;
   }
 
-  /* ------ NAVBAR ------ */
+  /* ======= NAVBAR ======= */
   .desktop {
     display: contents;
   }
@@ -373,8 +389,8 @@ footer a {
   }
 
   .logo img {
-    width: 5rem;
-    height: 3rem;
+    width: 7rem;
+    height: auto;
     padding-top: 10px;
   }
 

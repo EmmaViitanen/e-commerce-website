@@ -1,0 +1,197 @@
+/* ------ POSTERS PAGE ------ */
+.intro-posters {
+  width: 100%;
+  background-color: rgba(201, 200, 198, 1);
+}
+
+.intro-img {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  bottom: 0;
+  height: auto;
+}
+
+.posters {
+  display: flex;
+  justify-content: space-between;
+}
+
+#categories-head {
+  font-weight: 400;
+}
+
+.options p {
+  padding-top: 20px;
+}
+.options img {
+  height: 15px;
+}
+
+.poster-categories {
+  margin-top: 54px;
+  margin-bottom: 170px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 31px;
+  row-gap: 34px;
+}
+
+.box {
+  background: rgba(255, 255, 255, 1);
+  width: 320px;
+  height: 418px;
+}
+
+.box img {
+  width: 320px;
+  height: 341px;
+}
+
+.box figcaption {
+  padding-left: 13px;
+}
+
+.box figcaption .artist {
+  font-size: 0.9rem;
+}
+
+.box figcaption .name {
+  font-weight: 600;
+}
+
+.arrow {
+  width: 12px;
+}
+@media only screen and (min-width: 375px) {
+  /* ====== POSTERS PAGE ====== */
+  .categories {
+    display: none;
+  }
+
+  .box {
+    width: 180px;
+    height: 310px;
+  }
+  .box img {
+    width: 180px;
+    height: 230px;
+  }
+
+  .poster-categories {
+    margin-top: 54px;
+    margin-bottom: 170px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 20px;
+  }
+
+  .posters {
+    margin-top: 10px;
+  }
+
+  .intro-img {
+    padding-top: 0px;
+  }
+
+  .options p {
+    padding-top: 20px;
+  }
+  .options img {
+    height: 15px;
+  }
+
+  .box figcaption {
+    padding-left: 13px;
+  }
+
+  .box figcaption .artist {
+    font-size: 0.9rem;
+  }
+
+  .box figcaption .name {
+    font-weight: 600;
+  }
+
+  .arrow {
+    width: 12px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  /* ====== POSTER PAGE ====== */
+  .categories {
+    display: none;
+  }
+
+  .poster-categories {
+    margin-top: 54px;
+    margin-bottom: 170px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 31px;
+    row-gap: 34px;
+  }
+
+  .box {
+    background: rgba(255, 255, 255, 1);
+    width: 350px;
+    height: 480px;
+  }
+
+  .box img {
+    width: 350px;
+    height: 390px;
+  }
+
+  .box figcaption {
+    padding-left: 13px;
+  }
+
+  .box figcaption .artist {
+    font-size: 0.9rem;
+  }
+
+  .box figcaption .name {
+    font-weight: 600;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .categories {
+    display: contents;
+    display: inline-block;
+    padding-top: 50px;
+  }
+  .categories p {
+    padding-bottom: 20px;
+  }
+
+  .intro-posters {
+    width: 100%;
+  }
+
+  .intro-img {
+    padding-top: 117px;
+  }
+
+  .posters {
+    margin-top: 20px;
+  }
+
+  #categories-head {
+    font-weight: 400;
+  }
+
+  .options p {
+    padding-top: 20px;
+  }
+  .options img {
+    height: 15px;
+  }
+
+  .arrow {
+    width: 12px;
+  }
+}

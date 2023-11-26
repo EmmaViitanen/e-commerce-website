@@ -24,7 +24,7 @@ class MinHeader extends HTMLElement {
                   </div>
                   <div class="icons">
                     <ul>
-                        <a href="index.html"><img src="img/searchicon.png"></a>
+                        <a id="search" href="index.html"><img src="img/searchicon.png"></a>
                         <a href="index.html"><img src="img/account.png"></a>
                         <a href="index.html"><img src="img/heart.png"></a>
                         <a href="shoppingcart.html"><img src="img/shoppingbag.png"></a>

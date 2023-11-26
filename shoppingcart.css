@@ -1,0 +1,68 @@
+/* ------ SHOPPING BAG PAGE ------ */
+.shoppingcart-page {
+  height: 1800px;
+  padding-top: 150px;
+}
+.shoppingcart-page h2 {
+  padding-bottom: 40px;
+}
+.shoppingcart {
+  background-color: #fff;
+  width: 1314px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 35px;
+  padding: 50px 0px 50px 0px;
+}
+
+.shoppingcart a img {
+  width: 220px;
+  height: 300px;
+}
+
+.shoppingcart .addmore {
+  width: 86px;
+}
+
+.liked img {
+  width: 30px;
+}
+hr {
+  border-top: 5px solid #333;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+  padding: 50px;
+  text-align: center;
+}
+
+.confirm-button {
+  background-color: rgba(173, 169, 161, 0.5);
+  height: 60px;
+  width: 296px;
+  line-height: 60px;
+  text-align: center;
+}
+
+.confirm-button a {
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.cancel-button a {
+  text-decoration: none;
+  color: rgba(85, 85, 85, 1);
+}
+@media only screen and (min-width: 375px) {
+}
+
+@media only screen and (min-width: 600px) {
+}
+
+@media only screen and (min-width: 1300px) {
+}
