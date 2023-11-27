@@ -38,7 +38,7 @@ class MinHeader extends HTMLElement {
               </div>
               <div class="nav2">
                 <div class="left">
-                  <button onclick="menuFunction()" type="button"><img src="https://uxwing.com/wp-content/themes/uxwing/download/web-app-development/hamburger-menu-icon.png"></button>
+                  <button onclick="menuFunction()" type="button"><i class="ri-menu-line"></i></button>
                     <a href="index.html"><img src="img/searchicon.png"></a>
                 </div>
                 <div class="logo">
@@ -46,7 +46,7 @@ class MinHeader extends HTMLElement {
                         <a href="index.html"><img src="img/logo-code.svg"></a>
                     </ul>
                   </div>
-                <div class="icons">
+                <div class="right">
                   <ul>
                       <a href="index.html"><img src="img/heart.png"></a>
                       <a href="shoppingcart.html"><img src="img/shoppingbag.png"></a>

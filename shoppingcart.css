@@ -36,9 +36,9 @@ hr {
   color: rgba(85, 85, 85, 1);
 }
 
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 320px) {
   .shoppingcart-page {
-    height: 2500px;
+    height: 2700px;
     width: 100%;
   }
   .shoppingcart-page h2 {
@@ -82,11 +82,33 @@ hr {
 }
 
 @media only screen and (min-width: 600px) {
+  .shoppingcart-page {
+    height: 2200px;
+  }
   .cart-mobile {
     display: none;
   }
   .shoppingcart {
     display: contents;
+    display: grid;
+    background-color: #fff;
+    width: 90%;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 50px;
+
+    padding: 50px 30px 50px 30px;
+  }
+  .shoppingcart-page h2 {
+    padding-bottom: 40px;
+  }
+
+  .shoppingcart a img {
+    width: 20rem;
+    height: auto;
+  }
+
+  .liked img {
+    width: 2rem;
   }
 }
 
