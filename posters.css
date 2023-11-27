@@ -22,7 +22,7 @@ https://www.youtube.com/watch?v=hPrXq9HLnrk*/
 #categories:not(.sticky) {
   margin-left: 10px;
   position: absolute;
-  bottom: 110px;
+  bottom: 30px;
 }
 
 .sticky {
