@@ -7,6 +7,7 @@
 .intro-img {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
   bottom: 0;
   height: auto;
@@ -20,13 +21,13 @@
 /* sticky categories  
 https://www.youtube.com/watch?v=hPrXq9HLnrk*/
 #categories:not(.sticky) {
-  margin-left: 10px;
+  margin-left: 40px;
   position: absolute;
   bottom: 30px;
 }
 
 .sticky {
-  margin-left: 10px;
+  margin-left: 40px;
   position: fixed;
   top: 170px;
 }
@@ -59,7 +60,7 @@ https://www.youtube.com/watch?v=hPrXq9HLnrk*/
 .poster-categories {
   margin-top: 54px;
   margin-bottom: 170px;
-  margin-left: 210px;
+  margin-left: 27%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 31px;
