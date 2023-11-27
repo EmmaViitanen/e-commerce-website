@@ -7,6 +7,7 @@
 .intro-img {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
   bottom: 0;
   height: auto;
@@ -17,8 +18,36 @@
   justify-content: space-between;
 }
 
-#categories-head {
-  font-weight: 400;
+/* sticky categories  
+https://www.youtube.com/watch?v=hPrXq9HLnrk*/
+#categories:not(.sticky) {
+  margin-left: 40px;
+  position: absolute;
+  bottom: 30px;
+}
+
+.sticky {
+  margin-left: 40px;
+  position: fixed;
+  top: 170px;
+}
+
+.categories-head {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 26px;
+  padding-bottom: 5px;
+}
+
+.sortfilter {
+  padding-bottom: 10px;
+  font-size: 14px;
+}
+
+.categorie_alternatives {
+  font-weight: 600;
+  font-size: 16px;
+  padding-top: 7px;
 }
 
 .options p {
@@ -31,6 +60,7 @@
 .poster-categories {
   margin-top: 54px;
   margin-bottom: 170px;
+  margin-left: 27%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 31px;
