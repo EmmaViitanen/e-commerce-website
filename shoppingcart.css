@@ -1,6 +1,4 @@
 /* ------ SHOPPING BAG PAGE ------ */
-.shoppingcart {
-}
 
 .shoppingcart .addmore {
   width: 5rem;
@@ -37,9 +35,11 @@ hr {
   text-decoration: none;
   color: rgba(85, 85, 85, 1);
 }
+
 @media only screen and (min-width: 375px) {
   .shoppingcart-page {
-    height: 2700px;
+    height: 2500px;
+    width: 100%;
   }
   .shoppingcart-page h2 {
     padding-bottom: 50px;
@@ -56,9 +56,13 @@ hr {
     justify-content: center;
     align-items: center;
     background-color: #fff;
+    width: 20rem;
   }
   .shoppingcart2 {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    padding-left: 30px;
     padding-bottom: 50px;
   }
 
@@ -71,6 +75,9 @@ hr {
 
   .cart-info2 .addmore2 {
     width: 7rem;
+  }
+  .shoppingcart-page .buttons .confirm-button {
+    width: 100%;
   }
 }
 
