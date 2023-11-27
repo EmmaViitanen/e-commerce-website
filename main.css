@@ -30,6 +30,7 @@ Remember to keep the code organized. */
 }
 
 .front-img {
+  display: flex;
   height: 818px;
   width: 100%;
   top: 0;
@@ -84,7 +85,6 @@ Remember to keep the code organized. */
 .emptyspace {
   height: 110px;
   width: 100%;
-  color: rgba(201, 200, 198, 1);
 }
 .intro-img {
   bottom: 0;
