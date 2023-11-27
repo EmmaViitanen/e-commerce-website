@@ -48,7 +48,7 @@
 @media only screen and (min-width: 1300px) {
   /* ====== HOME PAGE ====== */
   .homepage {
-    height: 3840px;
+    height: 3846px;
   }
 
   .front-img img {
@@ -71,7 +71,7 @@
   }
 
   .container-opt a img {
-    width: 430px;
+    width: 455px;
     height: 600px;
   }
 
@@ -88,8 +88,8 @@
   }
 
   .container-opt2 a img {
-    width: 653px;
-    height: 863px;
+    width: 690px;
+    height: 870px;
   }
 
   .container-opt2 figcaption p {
