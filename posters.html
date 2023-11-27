@@ -5,11 +5,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="main.css" />
-  <script type="module" src="main.js"></script>
+  <link rel="stylesheet" href="posters.css" />
+  <script src="main.js" defer></script>
+  <script src="functions.js" defer></script>
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Open+Sans:wght@400;600;700&family=Overpass+Mono&family=PT+Serif&display=swap"
     rel="stylesheet" />
+  <!-- The following line of code was adapted from https://github.com/Remix-Design/RemixIcon Accessed: 2023-11-25 -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
   <title>All Posters</title>
 </head>
 
@@ -17,21 +20,20 @@
   <my-header></my-header>
   <main>
     <div class="intro-posters">
-      <img class="emptyspace">
-      <img src="img/PNGposterpagetopimg.png" class="intro-img">
+      <img src="img/PNGposterpagetopimg.png" alt="Information about posters" class="intro-img">
     </div>
     <div class="posters">
-      <div class="categories">
-        <h3 id="categories-head">CATEGORIES</h3>
-        <p>
+      <div class="sticky" id="categories">
+        <h3 class="categories-head">categories</h3>
+        <p class="sortfilter">
           SORT BY &nbsp;&nbsp;<img src="img/arrow.png" alt="downwards arrow" class="arrow" />&nbsp;&nbsp;FILTER
           &nbsp;&nbsp;<img src="img/arrow.png" alt="downwards arrow" class="arrow" />
         </p>
-        <p>Black & White</p>
-        <p>Nature</p>
-        <p>Abstract</p>
-        <p>Photographs</p>
-        <p>Media</p>
+        <p class="categorie_alternatives">Black & White</p>
+        <p class="categorie_alternatives">Nature</p>
+        <p class="categorie_alternatives">Abstract</p>
+        <p class="categorie_alternatives">Photographs</p>
+        <p class="categorie_alternatives">Media</p>
       </div>
       <div class="poster-categories">
         <div class="box">
@@ -59,7 +61,7 @@
           </figcaption>
         </div>
         <div class="box">
-          <a href="detail.html"><img src="img/tokyo.jpg" alt="Tokyo Drift by Vanellimelli" /></a>
+          <a href="product.html"><img src="img/tokyo.jpg" alt="Tokyo Drift by Vanellimelli" /></a>
           <figcaption>
             <p class="artist">Vanellimelli</p>
             <p class="name">Tokyo Drift</p>
@@ -134,6 +136,7 @@
     </div>
   </main>
   <my-footer></my-footer>
+  <script src="categories.js"></script>
 </body>
 
 </html>

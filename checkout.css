@@ -1,0 +1,135 @@
+/* ------ CHECKOUT PAGE ------ */
+.checkout-page {
+  height: 2350px;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-content: center;
+  padding-top: 150px;
+}
+
+.checkout-page form {
+  padding-top: 50px;
+}
+
+form .input input,
+select {
+  width: 1233px;
+  height: 60px;
+}
+
+.input input[type="text"],
+input[type="email"],
+input[type="tel"],
+select option,
+#fname,
+#lname,
+#pnumber,
+#city,
+#expire,
+#security-code {
+  border: 1px solid #333;
+  padding-left: 20px;
+  outline: none;
+}
+.input {
+  display: flex;
+  flex-direction: column;
+}
+
+.input2 {
+  display: flex;
+  flex-direction: row;
+}
+
+#finame,
+#lname,
+#pnumber,
+#city,
+#expire,
+#security-code {
+  width: 616.5px;
+  height: 60px;
+  padding-left: 20px;
+  outline: none;
+}
+
+.pay h3,
+.ship h3 {
+  padding-bottom: 20px;
+}
+
+#card-info {
+  height: 200px;
+  padding: 50px 50px 50px 50px;
+}
+
+#card-info form {
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+
+input[type="radio"] {
+  height: 40px;
+  width: 40px;
+  background-color: rgba(217, 217, 217, 1);
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.payement,
+.shipping {
+  background-color: #fff;
+  width: 1233px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 25px 0px 25px 0px;
+  align-items: center;
+  border-bottom: 1px solid #333;
+}
+
+.payement img {
+  height: 54px;
+}
+
+.card-payement-img img,
+.shipping img {
+  height: 40px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+  padding: 50px;
+  text-align: center;
+}
+
+.confirm-button {
+  background-color: rgba(173, 169, 161, 0.5);
+  height: 60px;
+  width: 296px;
+  line-height: 60px;
+  text-align: center;
+}
+
+.confirm-button a {
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.cancel-button a {
+  text-decoration: none;
+  color: rgba(85, 85, 85, 1);
+}
+
+@media only screen and (min-width: 375px) {
+}
+
+@media only screen and (min-width: 600px) {
+}
+
+@media only screen and (min-width: 1300px) {
+}

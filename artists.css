@@ -1,0 +1,95 @@
+/* ------ ARTISTS PAGE ------ */
+
+.artist figcaption {
+  text-align: center;
+}
+
+.artist figcaption .read-more {
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 375px) {
+  .artist-page {
+    height: 2000px;
+    padding-top: 50px;
+  }
+
+  .artists {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+    padding-top: 50px;
+  }
+
+  .artist figcaption {
+    width: 20rem;
+  }
+
+  .artist img {
+    width: 20em;
+    height: auto;
+    padding-bottom: 10px;
+  }
+
+  .artist figcaption .read-more {
+    font-weight: 600;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .artist-page {
+    height: 900px;
+    padding-top: 50px;
+  }
+
+  .artists {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: first baseline;
+    column-gap: 50px;
+    padding-top: 50px;
+  }
+
+  .artist figcaption {
+    width: 13rem;
+  }
+
+  .artist img {
+    width: 15rem;
+    height: auto;
+    padding-bottom: 10px;
+  }
+
+  .artist figcaption .read-more {
+    font-weight: 600;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .artist-page {
+    height: 1000px;
+    padding-top: 50px;
+  }
+
+  .artists {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: first baseline;
+    column-gap: 50px;
+    padding-top: 50px;
+  }
+
+  .artist figcaption {
+    width: 410px;
+  }
+
+  .artist img {
+    width: 410px;
+    height: 520px;
+    padding-bottom: 10px;
+  }
+
+  .artist figcaption .read-more {
+    font-weight: 600;
+  }
+}
