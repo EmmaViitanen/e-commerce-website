@@ -1,6 +1,7 @@
 /* ------ THANK YOU PAGE ------ */
 .thanx {
-  height: 838px;
+  height: 100%;
+  width: 100%;
 }
 .thax h1 {
   line-height: 70px;
