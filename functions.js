@@ -19,8 +19,3 @@ function menuFunction() {
     x.style.display = "none";
   }
 }
-
-function swapOverflow() {
-  var x = document.getElementById("hamburger-menu2").innerHTML;
-  document.getElementById("cat-but").innerHTML = x;
-}

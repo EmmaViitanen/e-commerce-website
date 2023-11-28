@@ -10,17 +10,12 @@
 
 .front-img {
   padding-top: 3500px;
-  width: 100%;
-}
-
-.middle-img {
-  width: 100%;
 }
 
 @media only screen and (min-width: 320px) {
   /* ====== HOME PAGE ====== */
   .homepage {
-    height: 3895px;
+    height: 2000px;
   }
 
   /* different images depending on screensize, 
@@ -32,11 +27,15 @@
     display: block;
   }
 
+  #most-popular {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
   .container,
   .container2 {
-    display: grid;
-    grid-template-columns: 2, 1fr;
-    row-gap: 50px;
+    display: flex;
   }
 
   .middle-img {
