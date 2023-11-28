@@ -193,6 +193,7 @@ https://www.youtube.com/watch?v=hPrXq9HLnrk*/
 
 @media only screen and (min-width: 1300px) {
   .intro-posters {
+    height: 500px;
     padding-top: 0;
   }
   .categories {
@@ -206,10 +207,13 @@ https://www.youtube.com/watch?v=hPrXq9HLnrk*/
 
   .intro-posters {
     width: 100%;
+    height: auto;
   }
 
   .intro-img {
     padding-top: 117px;
+    display: flex;
+    justify-content: space-between;
   }
 
   .posters {
