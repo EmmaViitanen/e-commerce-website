@@ -9,7 +9,7 @@
 }
 
 .front-img {
-  padding-top: 522px;
+  padding-top: 3500px;
   width: 100%;
 }
 
@@ -23,15 +23,24 @@
     height: 3895px;
   }
 
+  /* different images depending on screensize, 
+  inspiration from https://stackoverflow.com/questions/28966158/changing-image-depending-on-mobile-or-desktop-html-css */
+  #img1 {
+    display: none;
+  }
+  #img2 {
+    display: block;
+  }
+
   .container,
   .container2 {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 2, 1fr;
     row-gap: 50px;
   }
 
   .middle-img {
-    padding: 50px 0 50px 0;
+    padding: 50px 0px 50px 0px;
   }
 
   .container-opt a img,
@@ -45,6 +54,13 @@
 @media only screen and (min-width: 600px) {
   .homepage {
     height: 1766px;
+  }
+
+  #img1 {
+    display: block;
+  }
+  #img2 {
+    display: none;
   }
 
   .front-img img {
@@ -100,6 +116,13 @@
   /* ====== HOME PAGE ====== */
   .homepage {
     height: 100%;
+  }
+
+  #img1 {
+    display: block;
+  }
+  #img2 {
+    display: none;
   }
 
   .front-img {
