@@ -180,14 +180,20 @@
 }
 
 @media only screen and (min-width: 1300px) {
-  .intro-posters {
-    height: 500px;
-    padding-top: 0;
+  #intro-head {
+    display: none;
   }
-  .categories {
-    display: contents;
+  #intro-img {
+    display: flex;
+    width: 100%;
+  }
+
+  .intro-posters {
+    height: auto;
+    padding-top: 118px;
+  }
+  #categories {
     display: inline-block;
-    padding-top: 50px;
   }
 
   /* sticky categories  
@@ -201,22 +207,12 @@ https://www.youtube.com/watch?v=hPrXq9HLnrk*/
   .sticky {
     margin-left: 40px;
     position: fixed;
-    top: 170px;
+    top: 200px;
   }
 
-  .categories p {
+  #categorie-alternatives {
     padding-bottom: 20px;
-  }
-
-  .intro-posters {
-    width: 100%;
-    height: auto;
-  }
-
-  .intro-img {
-    padding-top: 117px;
-    display: flex;
-    justify-content: space-between;
+    font-weight: 200;
   }
 
   .posters {
