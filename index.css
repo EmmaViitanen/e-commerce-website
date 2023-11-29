@@ -12,6 +12,10 @@
   padding-top: 3500px;
 }
 
+.middle-img {
+  width: 100%;
+}
+
 @media only screen and (min-width: 320px) {
   /* ====== HOME PAGE ====== */
   .homepage {
@@ -130,9 +134,9 @@
   }
 
   .middle-img a img {
-    height: auto;
     width: 100%;
     padding-top: 80px;
+    margin: 0;
   }
 
   .container {

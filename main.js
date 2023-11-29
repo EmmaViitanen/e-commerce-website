@@ -8,7 +8,9 @@ class MinHeader extends HTMLElement {
             <nav>
             <div class="desktop">
                 <div class="nav1">
-                    <p>Fast and flexible delivery worldwide</p>
+                    <div class="text1">Fast and flexible delivery worldwide</div>
+                    <div class="text2">Free shipping over €39</div>
+                    <div class="text3">Delivery in 2-6 business days</div>
                 </div>
                 <div class="nav2">
                   <div class="pages">
