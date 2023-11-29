@@ -18,20 +18,6 @@
   justify-content: space-between;
 }
 
-/* sticky categories  
-https://www.youtube.com/watch?v=hPrXq9HLnrk*/
-#categories:not(.sticky) {
-  margin-left: 40px;
-  position: absolute;
-  bottom: 30px;
-}
-
-.sticky {
-  margin-left: 40px;
-  position: fixed;
-  top: 170px;
-}
-
 .categories-head {
   text-transform: uppercase;
   font-weight: bold;
@@ -95,8 +81,15 @@ https://www.youtube.com/watch?v=hPrXq9HLnrk*/
 }
 @media only screen and (min-width: 320px) {
   /* ====== POSTERS PAGE ====== */
-  .categories {
+  #categories,
+  #intro-img {
     display: none;
+  }
+
+  #intro-head {
+    display: flex;
+    width: 100%;
+    padding-top: 100px;
   }
 
   .box {
@@ -109,20 +102,15 @@ https://www.youtube.com/watch?v=hPrXq9HLnrk*/
   }
 
   .poster-categories {
-    margin-top: 54px;
     margin-bottom: 170px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 10px;
+    padding-right: 50px;
     row-gap: 20px;
   }
 
   .posters {
-    margin-top: 10px;
-  }
-
-  .intro-img {
-    padding-top: 0px;
   }
 
   .options p {
@@ -192,28 +180,39 @@ https://www.youtube.com/watch?v=hPrXq9HLnrk*/
 }
 
 @media only screen and (min-width: 1300px) {
-  .intro-posters {
-    height: 500px;
-    padding-top: 0;
+  #intro-head {
+    display: none;
   }
-  .categories {
-    display: contents;
-    display: inline-block;
-    padding-top: 50px;
-  }
-  .categories p {
-    padding-bottom: 20px;
-  }
-
-  .intro-posters {
-    width: 100%;
-    height: auto;
-  }
-
-  .intro-img {
-    padding-top: 117px;
+  #intro-img {
     display: flex;
-    justify-content: space-between;
+    width: 100%;
+  }
+
+  .intro-posters {
+    height: auto;
+    padding-top: 118px;
+  }
+  #categories {
+    display: inline-block;
+  }
+
+  /* sticky categories  
+https://www.youtube.com/watch?v=hPrXq9HLnrk*/
+  #categories:not(.sticky) {
+    margin-left: 40px;
+    position: absolute;
+    bottom: 30px;
+  }
+
+  .sticky {
+    margin-left: 40px;
+    position: fixed;
+    top: 200px;
+  }
+
+  #categorie-alternatives {
+    padding-bottom: 20px;
+    font-weight: 200;
   }
 
   .posters {

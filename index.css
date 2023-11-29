@@ -31,12 +31,6 @@
     display: block;
   }
 
-  #most-popular {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-
   .container,
   .container2 {
     display: flex;
