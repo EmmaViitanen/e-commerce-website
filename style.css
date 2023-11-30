@@ -232,6 +232,10 @@ footer a {
     display: none;
   }
 
+  .nav {
+    width: 320px;
+  }
+
   .mobile .mobile .nav2 {
     display: grid;
     align-items: center;

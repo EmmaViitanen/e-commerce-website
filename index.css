@@ -29,52 +29,66 @@
     width: 100%;
   }
 
-<<<<<<< HEAD
   .front-img {
-    padding-top: 3490px;
-  }
-
-  .front-img img {
-    width: 1200px;
+    padding-top: 82px;
   }
 
   .container {
     display: flex;
     flex-wrap: wrap;
+    padding-top: 30px;
   }
-  .container2 {
-=======
-  .container {
->>>>>>> 284d550d8dd6d90e911f9a01bbb7f958b79f6a56
+
+  .container-optopt {
     display: flex;
-    flex-direction: column;
-    width: 100%;
+    width: 320px;
+    justify-content: center;
+    column-gap: 10px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0;
+  }
+
+  .container-optopt a img {
+    width: 150px;
+    height: 196.66px;
+  }
+
+  .container-optopt a figcaption {
+    width: 150px;
+    padding-top: 20px;
+    padding-bottom: 80px;
+  }
+
+  .container-opt a img,
+  .container-opt a figcaption {
+    width: 75%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
   }
 
   .container2 {
     width: 100%;
-    padding-top: 50px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+
     display: flex;
     justify-content: space-between;
   }
 
   .container-opt2 a img {
-    width: 9rem;
-  }
-
-  .container-opt a img,
-  .container-opt a figcaption {
-    width: 95%;
-    height: auto;
+    display: flex;
+    width: 120px;
+    margin: 0;
   }
 }
 
 @media only screen and (min-width: 600px) {
   .homepage {
-<<<<<<< HEAD
     height: 100%;
-=======
->>>>>>> 284d550d8dd6d90e911f9a01bbb7f958b79f6a56
   }
 
   #img1 {
@@ -99,15 +113,35 @@
   }
 
   .container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
     column-gap: 0px;
-    align-items: first baseline;
+    align-items: baseline;
     padding-top: 80px;
+    margin: 0;
+  }
+
+  .container-optopt {
+    display: flex;
+    width: 380px;
+    justify-content: baseline;
+    column-gap: 10px;
+    padding-left: 10px;
+  }
+
+  .container-optopt a img {
+    width: 180px;
+    height: 236px;
+  }
+
+  .container-optopt a figcaption {
+    width: 150px;
+    padding-top: 20px;
+    padding-bottom: 80px;
   }
 
   .container-opt a img {
-    width: 90%;
+    width: 180px;
+    height: 236px;
   }
 
   .container-opt a figcaption {
@@ -122,12 +156,12 @@
     column-gap: 0px;
     padding-left: 40px;
     padding-right: 40px;
-    padding-top: 0px;
+    padding-top: 60px;
     padding-bottom: 70px;
   }
 
   .container-opt2 a img {
-    width: 80%;
+    width: 250px;
   }
 
   .container-opt2 figcaption p {
@@ -162,18 +196,38 @@
   .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 100px;
-    align-items: first baseline;
+    column-gap: 20px;
+    align-items: baseline;
     padding-top: 80px;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+  }
+
+  .container-optopt {
+    display: flex;
+    width: 810px;
+    justify-content: baseline;
+    column-gap: 20px;
+  }
+
+  .container-optopt a img {
+    width: 400px;
+    height: 524.5px;
+  }
+
+  .container-optopt a figcaption {
+    padding-top: 20px;
   }
 
   .container-opt a img {
-    width: 455px;
-    height: 600px;
+    width: 400px;
+    height: 524.5px;
+    display: flex;
   }
 
   .container-opt a figcaption {
-    width: 430px;
+    width: 400px;
     padding-top: 20px;
   }
 
@@ -186,8 +240,8 @@
   }
 
   .container-opt2 a img {
-    width: 690px;
-    height: 870px;
+    width: 550px;
+    height: 693.47px;
   }
 
   .container-opt2 figcaption p {
