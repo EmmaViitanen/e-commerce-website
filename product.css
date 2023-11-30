@@ -1,12 +1,12 @@
 .grid-container {
   display: grid;
   grid-template-columns: auto 1fr 1fr;
-  padding: 50px 200px 50px 100px;
+  padding: 150px 100px 50px 100px;
 }
 
 .grid-item {
   width: 225px;
-  height: 500px;
+  height: 600px;
   display: flex;
   flex-direction: column;
   overflow-y: auto;
@@ -39,7 +39,7 @@
 .grid-item2 {
   width: 500px;
   height: 700px;
-  padding-top: 100px;
+  padding-top: 50px;
 }
 
 .slide-img {
@@ -96,66 +96,29 @@
   margin-top: 10px;
 }
 
+#x {
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+
 #price {
   margin-top: 30px;
   margin-bottom: 30px;
   font-size: 21px;
 }
 
-#sizebutton1 {
+#sizebutton {
   padding: 10px 20px;
   font-size: 16px;
   background-color: white;
-  color: black;
+  color: #333;
   border: none;
   border-radius: 0px;
   cursor: pointer;
 }
 
-#sizebutton1:hover {
-  background-color: rgb(172, 172, 172);
-}
-
-#sizebutton2 {
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: white;
-  color: black;
-  border: none;
-  border-radius: 0px;
-  cursor: pointer;
-}
-
-#sizebutton2:hover {
-  background-color: rgb(172, 172, 172);
-}
-
-#sizebutton3 {
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: white;
-  color: black;
-  border: none;
-  border-radius: 0px;
-  cursor: pointer;
-}
-
-#sizebutton3:hover {
-  background-color: rgb(172, 172, 172);
-}
-
-#sizebutton4 {
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: white;
-  color: black;
-  border: none;
-  border-radius: 0px;
-  cursor: pointer;
-}
-
-#sizebutton4:hover {
-  background-color: rgb(172, 172, 172);
+#sizebutton:hover {
+  background-color: rgba(217, 217, 217, 1);
 }
 
 #heart {
