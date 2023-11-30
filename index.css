@@ -1,7 +1,4 @@
 /* ------ HOME PAGE ------ */
-.homepage {
-  width: 100%;
-}
 
 .homepage a {
   text-decoration: none;
@@ -9,7 +6,7 @@
 }
 
 .front-img {
-  padding-top: 3500px;
+  padding-top: 600px;
 }
 
 .middle-img {
@@ -19,7 +16,7 @@
 @media only screen and (min-width: 320px) {
   /* ====== HOME PAGE ====== */
   .homepage {
-    height: 2000px;
+    height: 2460x;
   }
 
   /* different images depending on screensize, 
@@ -29,21 +26,33 @@
   }
   #img2 {
     display: block;
+    width: 100%;
   }
 
-  .container,
-  .container2 {
+  .container {
     display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .container2 {
+    width: 100%;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .container-opt2 a img {
+    width: 9rem;
   }
 
   .middle-img {
-    padding: 50px 0px 50px 0px;
+    width: 100%;
   }
 
   .container-opt a img,
-  .container-opt2 a img,
   .container-opt a figcaption {
-    width: 400px;
+    width: 95%;
     height: auto;
   }
 }
