@@ -29,7 +29,23 @@
     width: 100%;
   }
 
+<<<<<<< HEAD
+  .front-img {
+    padding-top: 3490px;
+  }
+
+  .front-img img {
+    width: 1200px;
+  }
+
   .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .container2 {
+=======
+  .container {
+>>>>>>> 284d550d8dd6d90e911f9a01bbb7f958b79f6a56
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -55,7 +71,10 @@
 
 @media only screen and (min-width: 600px) {
   .homepage {
-    margin-top: 200px;
+<<<<<<< HEAD
+    height: 100%;
+=======
+>>>>>>> 284d550d8dd6d90e911f9a01bbb7f958b79f6a56
   }
 
   #img1 {
@@ -65,9 +84,11 @@
     display: none;
   }
 
+  .front-img {
+    padding-top: 105px;
+  }
+
   .front-img img {
-    top: 0;
-    height: auto;
     width: 100%;
   }
 
