@@ -31,7 +31,18 @@
     display: block;
   }
 
-  .container,
+  .front-img {
+    padding-top: 3490px;
+  }
+
+  .front-img img {
+    width: 1200px;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
   .container2 {
     display: flex;
   }
@@ -50,7 +61,7 @@
 
 @media only screen and (min-width: 600px) {
   .homepage {
-    height: 1766px;
+    height: 100%;
   }
 
   #img1 {
@@ -60,9 +71,11 @@
     display: none;
   }
 
+  .front-img {
+    padding-top: 105px;
+  }
+
   .front-img img {
-    top: 0;
-    height: auto;
     width: 100%;
   }
 
