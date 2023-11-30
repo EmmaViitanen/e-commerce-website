@@ -36,7 +36,8 @@ a:hover {
 .artist-page,
 .about-page,
 .contact-page,
-.artist-page {
+.artist-page,
+.grid-container {
   display: flex;
   flex-direction: column;
   justify-content: center;

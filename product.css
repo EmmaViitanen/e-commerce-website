@@ -1,15 +1,10 @@
 .grid-container {
   display: grid;
-
   grid-template-columns:
     auto 1fr
     1fr;
-
   gap: 0px;
-
-  margin: 150px auto;
-
-  padding: 35px;
+  padding-top: 200px;
 }
 
 .grid-item {
