@@ -40,7 +40,7 @@ class MinHeader extends HTMLElement {
               </div>
               <div class="nav2">
                 <div class="left">
-                  <button onclick="menuFunction()" type="button"><i class="ri-menu-line"></i></button>
+                  <a onclick="menuFunction()"><i class="ri-menu-line"></i></a>
                     <a href="index.html"><img src="img/searchicon.png"></a>
                 </div>
                 <div class="logo">
