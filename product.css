@@ -25,15 +25,10 @@
 
 .grid-item img {
   max-width: 100%;
-
   height: auto;
-
   display: block;
-
   margin: 0 auto;
-
   width: 200px;
-
   height: auto;
 }
 
@@ -62,50 +57,39 @@
 
 .grid-item#main-item {
   text-align: left;
-
   margin: 0 60px 0 auto;
 }
 
 #main-img {
   width: 600px;
-
   height: auto;
-
   display: block;
-
   margin: 0 auto;
 }
 
 .grid-item#item1 {
   text-align: left;
-
   padding-right: 20px;
 }
 
 #add-to-bag {
   padding: 30px 160px;
-
   font-size: 16px;
-
-  background-color: #333;
-
+  background-color: black;
   color: #fff;
-
-  border: none;
-
+  border: 0px;
   border-radius: 0px;
-
   cursor: pointer;
-
   margin-top: 160px;
 }
 
 #add-to-bag:hover {
-  background-color: black;
+  background-color: gray;
 }
 
 #t {
   margin-top: 120px;
+  margin-left: 0;
 }
 
 #v {
@@ -114,25 +98,17 @@
 
 #price {
   margin-top: 30px;
-
   margin-bottom: 30px;
-
   font-size: 21px;
 }
 
 #sizebutton1 {
   padding: 10px 20px;
-
   font-size: 16px;
-
   background-color: white;
-
   color: black;
-
   border: none;
-
   border-radius: 0px;
-
   cursor: pointer;
 }
 
@@ -142,17 +118,11 @@
 
 #sizebutton2 {
   padding: 10px 20px;
-
   font-size: 16px;
-
   background-color: white;
-
   color: black;
-
   border: none;
-
   border-radius: 0px;
-
   cursor: pointer;
 }
 
@@ -162,17 +132,11 @@
 
 #sizebutton3 {
   padding: 10px 20px;
-
   font-size: 16px;
-
   background-color: white;
-
   color: black;
-
   border: none;
-
   border-radius: 0px;
-
   cursor: pointer;
 }
 
@@ -182,17 +146,11 @@
 
 #sizebutton4 {
   padding: 10px 20px;
-
   font-size: 16px;
-
   background-color: white;
-
   color: black;
-
   border: none;
-
   border-radius: 0px;
-
   cursor: pointer;
 }
 
@@ -202,12 +160,11 @@
 
 #heart {
   width: 25px;
-
   height: auto;
+  margin-right: 0;
 }
 
-.title {
+.tokyo-heart {
   display: flex;
-
-  align-items: center;
+  align-items: baseline;
 }
