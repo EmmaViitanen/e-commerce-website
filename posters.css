@@ -46,7 +46,7 @@
 .poster-categories {
   margin-top: 54px;
   margin-bottom: 170px;
-  margin-left: 27%;
+  padding-left: 100px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 31px;

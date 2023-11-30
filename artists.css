@@ -8,10 +8,10 @@
   text-decoration: underline;
 }
 
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 320px) {
   .artist-page {
     height: 2000px;
-    padding-top: 50px;
+    padding-top: 70px;
   }
 
   .artists {
@@ -23,6 +23,7 @@
 
   .artist figcaption {
     width: 20rem;
+    padding: 10px;
   }
 
   .artist img {
