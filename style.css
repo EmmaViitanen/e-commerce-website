@@ -472,6 +472,10 @@ footer a {
     display: none;
   }
 
+  .nav {
+    width: 1300px;
+  }
+
   .nav1 p {
     font-size: 14px;
     height: 38px;

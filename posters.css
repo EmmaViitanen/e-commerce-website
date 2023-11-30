@@ -44,8 +44,7 @@
 }
 
 .poster-categories {
-  margin-top: 54px;
-  margin-bottom: 170px;
+  margin: 0;
   padding-left: 100px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -144,8 +143,10 @@
   .categories {
     display: none;
   }
+
   .intro-posters {
     padding-top: 108px;
+    width: 600px;
   }
 
   .poster-categories {
@@ -187,13 +188,19 @@
   }
   #intro-img {
     display: flex;
-    width: 100%;
+    width: 1300px;
   }
 
   .intro-posters {
     height: auto;
     padding-top: 105px;
   }
+
+  .poster-categories {
+    padding-left: 200px;
+    column-gap: 20px;
+  }
+
   #categories {
     display: inline-block;
   }
@@ -201,13 +208,13 @@
   /* sticky categories  
 https://www.youtube.com/watch?v=hPrXq9HLnrk*/
   #categories:not(.sticky) {
-    margin-left: 40px;
+    margin-left: 10px;
     position: absolute;
     bottom: 30px;
   }
 
   .sticky {
-    margin-left: 40px;
+    margin-left: 10px;
     position: fixed;
     top: 200px;
   }
