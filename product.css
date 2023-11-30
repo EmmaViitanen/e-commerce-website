@@ -2,7 +2,12 @@
   display: grid;
   grid-template-columns: auto 1fr 1fr;
   padding: 150px 100px 50px 100px;
+  position: relative;
 }
+
+/* .grid-item {
+  
+} */
 
 .grid-item {
   width: 225px;
@@ -36,23 +41,21 @@
   padding-top: 50px;
 }
 
-.grid-item2 {
-  width: 500px;
-  height: 700px;
-  padding-top: 50px;
-}
-
-.slide-img {
+.demo {
   opacity: 0.5;
 }
 
 .active,
-.slide-img:hover {
+.demo:hover {
   opacity: 1;
 }
 
 .main-slide {
   display: none;
+}
+
+.cursor {
+  cursor: pointer;
 }
 
 .grid-item#main-item {
@@ -75,7 +78,7 @@
 #add-to-bag {
   padding: 30px 160px;
   font-size: 16px;
-  background-color: black;
+  background-color: #333;
   color: #fff;
   border: 0px;
   border-radius: 0px;
@@ -84,7 +87,7 @@
 }
 
 #add-to-bag:hover {
-  background-color: gray;
+  background-color: rgba(217, 217, 217, 1);
 }
 
 #t {
