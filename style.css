@@ -284,6 +284,10 @@ footer a {
     grid-template-columns: 1fr;
   }
 
+  #hamburger-menu {
+    display: none;
+  }
+
   /* ------ FOOTER ------ */
   footer {
     display: inline-block;
@@ -393,6 +397,10 @@ footer a {
 
   .icons a {
     padding-left: 50px;
+  }
+
+  #hamburger-menu {
+    display: none;
   }
 
   /* ====== FOOTER ====== */
