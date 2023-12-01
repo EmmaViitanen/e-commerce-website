@@ -47,16 +47,16 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: first baseline;
-    column-gap: 50px;
+    column-gap: 5px;
     padding-top: 50px;
   }
 
   .artist figcaption {
-    width: 13rem;
+    width: 12rem;
   }
 
   .artist img {
-    width: 15rem;
+    width: 12rem;
     height: auto;
     padding-bottom: 10px;
   }
@@ -68,25 +68,29 @@
 
 @media only screen and (min-width: 1300px) {
   .artist-page {
+    display: flex;
     height: 1000px;
-    padding-top: 50px;
+    padding-top: 100px;
+    justify-content: center;
+    align-items: center;
   }
 
   .artists {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: first baseline;
-    column-gap: 50px;
+    column-gap: 40px;
     padding-top: 50px;
+    padding: 10px;
   }
 
   .artist figcaption {
-    width: 410px;
+    width: 400px;
   }
 
   .artist img {
-    width: 410px;
-    height: 520px;
+    width: 400px;
+    height: 507.317px;
     padding-bottom: 10px;
   }
 

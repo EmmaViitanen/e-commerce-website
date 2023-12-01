@@ -211,13 +211,13 @@
 
   .box {
     background: rgba(255, 255, 255, 1);
-    width: 320px;
-    height: 418px;
+    width: 250px;
+    height: 342.85px;
   }
 
   .box img {
-    width: 320px;
-    height: 341px;
+    width: 250px;
+    height: 278.57px;
   }
 
   #categories {
