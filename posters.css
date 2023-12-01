@@ -111,9 +111,6 @@
     margin-left: 0;
   }
 
-  .posters {
-  }
-
   .options p {
     padding-top: 20px;
   }
@@ -140,33 +137,42 @@
 
 @media only screen and (min-width: 600px) {
   /* ====== POSTER PAGE ====== */
-  .categories {
+
+  #categories,
+  #intro-img {
     display: none;
   }
 
   .intro-posters {
     padding-top: 108px;
-    width: 600px;
+    width: 100%;
+  }
+
+  #intro-head {
+    display: flex;
+    width: 100%;
+    padding-top: 70px;
   }
 
   .poster-categories {
     margin-top: 54px;
     margin-bottom: 170px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     column-gap: 31px;
     row-gap: 34px;
+    width: 600px;
   }
 
   .box {
     background: rgba(255, 255, 255, 1);
-    width: 350px;
-    height: 480px;
+    width: 250px;
+    height: 342.85px;
   }
 
   .box img {
-    width: 350px;
-    height: 390px;
+    width: 250px;
+    height: 278.57px;
   }
 
   .box figcaption {
@@ -174,7 +180,7 @@
   }
 
   .box figcaption .artist {
-    font-size: 0.9rem;
+    font-size: 14px;
   }
 
   .box figcaption .name {
@@ -197,8 +203,21 @@
   }
 
   .poster-categories {
+    grid-template-columns: repeat(3, 1fr);
     padding-left: 200px;
     column-gap: 20px;
+    width: 1300px;
+  }
+
+  .box {
+    background: rgba(255, 255, 255, 1);
+    width: 320px;
+    height: 418px;
+  }
+
+  .box img {
+    width: 320px;
+    height: 341px;
   }
 
   #categories {

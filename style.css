@@ -351,7 +351,7 @@ footer a {
     display: contents;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    width: 100%;
+    width: 600px;
   }
 
   .mobile .nav1 p {
@@ -431,6 +431,8 @@ footer a {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 80px;
     padding-top: 70px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .footer-links p {
     line-height: 30px;
