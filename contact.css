@@ -1,10 +1,6 @@
 /* ------ CONTACT PAGE ------- */
-.contact {
-  display: grid;
-}
-
-label[for="email"],
-[for="message"] {
+label[for="c-email"],
+[for="c-message"] {
   padding-bottom: 5px;
 }
 
@@ -47,8 +43,8 @@ label[for="email"],
     padding-left: 25px;
   }
 
-  label[for="email"],
-  [for="message"] {
+  label[for="c-email"],
+  [for="c-message"] {
     padding-bottom: 5px;
   }
 
@@ -87,12 +83,13 @@ label[for="email"],
   }
 
   .contact {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 100px;
   }
 
-  label[for="email"],
-  [for="message"] {
+  label[for="c-email"],
+  [for="c-message"] {
     padding-bottom: 5px;
   }
 
@@ -126,12 +123,13 @@ label[for="email"],
   }
 
   .contact {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 500px;
   }
 
-  label[for="email"],
-  [for="message"] {
+  label[for="c-email"],
+  [for="c-message"] {
     padding-bottom: 5px;
   }
 

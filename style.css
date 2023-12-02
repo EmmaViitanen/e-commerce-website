@@ -46,7 +46,7 @@ a:hover {
 }
 
 /* NAVBAR */
-/* The following 6 lines was adapted by https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_fixed_menu Accessed 2023-11-18 */
+/* The following 5 lines was adapted by https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_fixed_menu Accessed 2023-11-18 */
 nav {
   overflow: hidden;
   position: fixed;

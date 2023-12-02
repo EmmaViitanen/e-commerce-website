@@ -6,21 +6,13 @@
   text-align: center;
 }
 
-.intro p {
-  width: 730px;
-}
-
 .sub-head {
-  padding: 90px 0 10px 0;
   font-weight: bold;
+  padding: 90px 0 10px 0;
 }
 
 .about {
   padding-bottom: 100px;
-}
-
-.about p {
-  width: 50rem;
 }
 
 @media only screen and (min-width: 375px) {
@@ -28,11 +20,11 @@
     height: 1265px;
   }
   .intro {
-    padding: 50px 20px 50px 20px;
+    margin: 10px;
   }
 
   .about {
-    padding: 50px 20px 0 20px;
+    margin: 10px;
   }
 
   .about .sub-head {
