@@ -2,12 +2,7 @@
   display: grid;
   grid-template-columns: auto 1fr 1fr;
   padding: 150px 100px 50px 100px;
-  position: relative;
 }
-
-/* .grid-item {
-  
-} */
 
 .grid-item {
   width: 225px;
@@ -33,46 +28,12 @@
   height: auto;
   display: block;
   margin: 0 auto;
-  width: 200px;
-  height: auto;
 }
 
-.grid-item.item3 {
-  padding-top: 50px;
-}
-
-.demo {
-  opacity: 0.5;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
-}
-
-.main-slide {
-  display: none;
-}
-
-.cursor {
-  cursor: pointer;
-}
-
-.grid-item#main-item {
-  text-align: left;
-  margin: 0 60px 0 auto;
-}
-
-#main-img {
-  width: 600px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-
-.grid-item#item1 {
-  text-align: left;
-  padding-right: 20px;
+.main-slide img,
+#sticky-img {
+  width: auto;
+  height: 600px;
 }
 
 #add-to-bag {
@@ -133,6 +94,14 @@
 .tokyo-heart {
   display: flex;
   align-items: baseline;
+}
+
+/* The following 6 lines of code was adapted from https://www.tutorialspoint.com/how-to-show-images-with-a-click-in-javascript-using-html Accessed:2023-12-02 */
+.hidden {
+  display: none;
+}
+.visible {
+  display: block;
 }
 
 @media only screen and (min-width: 320px) {

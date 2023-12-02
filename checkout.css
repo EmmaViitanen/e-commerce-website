@@ -1,11 +1,11 @@
 /* ------ CHECKOUT PAGE ------ */
 .checkout-page {
-  height: 2350px;
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
   justify-content: center;
-  padding-top: 150px;
+  padding-top: 200px;
+  row-gap: 50px;
 }
 
 .checkout-page form {
@@ -15,8 +15,6 @@
 form .input input,
 select {
   width: 100%;
-  height: 60px;
-  padding-left: 20px;
 }
 
 .input input[type="text"],
@@ -48,9 +46,6 @@ select option,
 #city,
 #expire,
 #security-code {
-  width: 616.5px;
-  height: 60px;
-  padding-left: 20px;
   outline: none;
 }
 
@@ -59,60 +54,25 @@ select option,
   padding-bottom: 20px;
 }
 
-.payement-card {
-  background-color: #fff;
-  width: 1233px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 25px 0px 25px 0px;
-  align-items: center;
-}
-
 .cardform {
   background-color: #fff;
   border-bottom: 1px solid #333;
-  width: 1233px;
 }
 
 #card-info {
   display: none;
-  height: 200px;
   padding: 0px 50px 50px 50px;
 }
 
 #card-info form {
-  width: 80%;
   padding-top: 0;
   padding-bottom: 0px;
 }
 
 input[type="radio"] {
-  height: 40px;
-  width: 40px;
   background-color: rgba(217, 217, 217, 1);
   border-radius: 50%;
   border: 2px solid white;
-}
-
-.payement,
-.shipping {
-  background-color: #fff;
-  width: 1233px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 25px 0px 25px 0px;
-  align-items: center;
-  border-bottom: 1px solid #333;
-}
-
-.payement img {
-  height: 54px;
-}
-
-.card-payement-img img,
-.shipping img {
-  height: 40px;
-  display: inline-flex;
 }
 
 .buttons {
@@ -125,16 +85,16 @@ input[type="radio"] {
 
 .confirm-button {
   background-color: rgba(173, 169, 161, 0.5);
-  height: 60px;
-  width: 296px;
-  line-height: 60px;
+  height: 4rem;
+  width: 20rem;
+  line-height: 4rem;
   text-align: center;
 }
 
 .confirm-button a {
   text-decoration: none;
   color: #333;
-  font-size: 20px;
+  font-size: 1.2rem;
   font-weight: 600;
 }
 
@@ -143,11 +103,140 @@ input[type="radio"] {
   color: rgba(85, 85, 85, 1);
 }
 
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 320px) {
+  .payement,
+  .shipping {
+    width: 100%;
+    padding: 5px 0px 5px 0px;
+  }
+
+  .cardform {
+    width: 300px;
+  }
+
+  #finame,
+  #lname,
+  #pnumber,
+  #city,
+  #expire,
+  #security-code {
+    width: 100%;
+    height: 4rem;
+    padding-left: 20px;
+    outline: none;
+  }
+  form .input input,
+  select {
+    height: 4rem;
+    padding-left: 20px;
+  }
+  #card-info {
+    display: none;
+    height: 200px;
+  }
+
+  #card-info form {
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 0px;
+  }
+
+  input[type="radio"] {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+
+  .payement,
+  .shipping {
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    border-bottom: 1px solid #333;
+    width: 100%;
+  }
+  .payement-card {
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+  .payement img,
+  .card-payement-img img,
+  .shipping img {
+    height: 1rem;
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
 }
 
 @media only screen and (min-width: 600px) {
 }
 
 @media only screen and (min-width: 1300px) {
+  .payement,
+  .shipping {
+    width: 1233px;
+    padding: 25px 0px 25px 0px;
+  }
+
+  .cardform {
+    width: 1233px;
+  }
+
+  #finame,
+  #lname,
+  #pnumber,
+  #city,
+  #expire,
+  #security-code {
+    width: 616.5px;
+    height: 60px;
+    padding-left: 20px;
+    outline: none;
+  }
+
+  .payement,
+  .shipping {
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    border-bottom: 1px solid #333;
+  }
+
+  .payement-card {
+    background-color: #fff;
+    width: 1233px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 25px 0px 25px 0px;
+    align-items: center;
+  }
+
+  .payement img,
+  .card-payement-img img,
+  .shipping img {
+    height: 3rem;
+    display: inline-flex;
+  }
+
+  form .input input,
+  select {
+    height: 60px;
+    padding-left: 20px;
+  }
+
+  input[type="radio"] {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+  #card-info {
+    height: 200px;
+    padding: 0px 50px 50px 50px;
+  }
+
+  #card-info form {
+    width: 80%;
+  }
 }

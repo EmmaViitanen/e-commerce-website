@@ -21,8 +21,6 @@ hr {
   height: 60px;
   line-height: 60px;
   text-align: center;
-  padding-right: 102px;
-  padding-left: 102px;
 }
 
 .confirm-button a {
@@ -78,7 +76,8 @@ hr {
     width: 7rem;
   }
   .shoppingcart-page .buttons .confirm-button {
-    width: 100%;
+    padding-right: 50px;
+    padding-left: 50px;
   }
 }
 
@@ -141,5 +140,10 @@ hr {
 
   .liked img {
     width: 2rem;
+  }
+
+  .confirm-button {
+    padding-right: 102px;
+    padding-left: 102px;
   }
 }
