@@ -61,7 +61,7 @@ class MinHeader extends HTMLElement {
                   <div class="filter1">
                     <ul>
                       <a href="posters.html">ALL POSTERS</a>
-                      <a href="" onclick="on()">CATEGORIES</a>
+                      <a onclick="overlay()">CATEGORIES</a>
                       <a href="artists.html">ARTISTS</a>
                     </ul> 
                   </div>
@@ -77,7 +77,7 @@ class MinHeader extends HTMLElement {
                   </form>
                 </div>
                 <div id="overlay">
-                  <i class="ri-arrow-left-s-line" onclick="off()"></i>
+                  <i class="ri-arrow-left-s-line" onclick="off()" ></i>
                   <h2>CATEGORIES</h2>
                   <a href="posters.html">Black and White</a>
                   <a href="posters.html">Nature</a>

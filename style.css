@@ -131,6 +131,7 @@ got inspiration from https://www.google.com/search?q=animation+css+changing+text
 .nav2 a {
   text-decoration: none;
   color: #333;
+  transition: 0.3s;
 }
 
 .mobile button {
@@ -144,7 +145,7 @@ got inspiration from https://www.google.com/search?q=animation+css+changing+text
   display: grid;
   grid-template-columns: 1fr;
   justify-content: first baseline;
-  width: 100%;
+  width: 25%;
   height: auto;
 }
 
@@ -157,12 +158,24 @@ got inspiration from https://www.google.com/search?q=animation+css+changing+text
   padding-bottom: 50px;
 }
 
-#hamburger-menu .filter1 ul a {
+#hamburger-menu .filter1 ul a,
+#overlay a,
+#overlay h2,
+.ri-arrow-left-s-line {
   display: block;
   width: 400px;
   text-decoration: none;
   color: #333;
   font-weight: 600;
+  line-height: 50px;
+  padding-left: 20px;
+}
+
+#overlay h2 {
+  display: block;
+  width: 400px;
+  text-decoration: underline 1px solid #333;
+  color: #333;
   line-height: 50px;
   padding-left: 20px;
 }
@@ -298,8 +311,7 @@ footer a {
     width: 200px;
   }
 
-  #hamburger-menu,
-  #overlay {
+  #hamburger-menu {
     display: none;
     margin-left: 0;
     width: 240px;
@@ -417,7 +429,8 @@ footer a {
     padding-left: 50px;
   }
 
-  #hamburger-menu {
+  #hamburger-menu,
+  #overlay {
     display: none;
   }
 
