@@ -138,7 +138,8 @@ got inspiration from https://www.google.com/search?q=animation+css+changing+text
   background-color: rgba(173, 169, 161, 0.5);
 }
 
-#hamburger-menu {
+#hamburger-menu,
+#overlay {
   background-color: rgba(217, 217, 217, 1);
   display: grid;
   grid-template-columns: 1fr;
@@ -297,7 +298,8 @@ footer a {
     width: 200px;
   }
 
-  #hamburger-menu {
+  #hamburger-menu,
+  #overlay {
     display: none;
     margin-left: 0;
     width: 240px;
@@ -367,7 +369,7 @@ footer a {
     display: contents;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    width: 600px;
+    width: 100%;
   }
 
   .mobile .nav1 p {
