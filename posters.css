@@ -139,13 +139,14 @@
   }
 
   .poster-categories {
-    margin-top: 54px;
-    margin-bottom: 170px;
+    padding-top: 54px;
+    padding-bottom: 170px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 31px;
     row-gap: 34px;
     width: 600px;
+    margin: 0;
   }
 
   .box {

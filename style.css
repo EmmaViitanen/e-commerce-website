@@ -147,6 +147,7 @@ got inspiration from https://www.google.com/search?q=animation+css+changing+text
   justify-content: first baseline;
   width: 25%;
   height: auto;
+  margin: 0;
 }
 
 #hamburger-menu .filter1 {
@@ -311,7 +312,8 @@ footer a {
     width: 200px;
   }
 
-  #hamburger-menu {
+  #hamburger-menu,
+  #overlay {
     display: none;
     margin-left: 0;
     width: 240px;
