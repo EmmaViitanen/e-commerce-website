@@ -77,7 +77,7 @@ class MinHeader extends HTMLElement {
                   </form>
                 </div>
                 <div id="overlay">
-                  <i class="ri-arrow-left-s-line" onclick="off()" ></i>
+                  <img id="arrowLeft" src="img/arrowLeft.png" onclick="off()"/img>
                   <h2>CATEGORIES</h2>
                   <a href="posters.html">Black and White</a>
                   <a href="posters.html">Nature</a>

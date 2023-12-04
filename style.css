@@ -160,8 +160,7 @@ got inspiration from https://www.google.com/search?q=animation+css+changing+text
 
 #hamburger-menu .filter1 ul a,
 #overlay a,
-#overlay h2,
-.ri-arrow-left-s-line {
+#overlay h2 {
   display: block;
   width: 400px;
   text-decoration: none;
@@ -264,6 +263,12 @@ footer a {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 30px;
+  }
+
+  #arrowLeft {
+    height: 20px;
+    padding-left: 20px;
+    padding-top: 5px;
   }
 
   .ri-menu-line {
