@@ -140,6 +140,7 @@
 
   .poster-categories {
     padding-top: 54px;
+    padding-left: 120px;
     padding-bottom: 170px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
