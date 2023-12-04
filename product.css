@@ -69,7 +69,8 @@
 }
 
 #add-to-bag:hover {
-  background-color: rgba(217, 217, 217, 1);
+  background-color: rgba(173, 169, 161, 0.5);
+  color: #333;
 }
 
 #t {
@@ -92,18 +93,25 @@
   font-size: 21px;
 }
 
-#sizebutton {
-  padding: 10px 20px;
+.sizes {
+  display: flex;
+}
+
+.sizebutton {
+  text-align: center;
+  width: 95px;
+  line-height: 50px;
   font-size: 16px;
-  background-color: white;
+  background-color: #fff;
   color: #333;
   border: none;
-  border-radius: 0px;
+  margin-left: 0;
+  margin-right: 5px;
   cursor: pointer;
 }
 
-#sizebutton:hover {
-  background-color: rgba(217, 217, 217, 1);
+.sizebutton:hover {
+  background-color: rgba(173, 169, 161, 0.5);
 }
 
 #heart {
