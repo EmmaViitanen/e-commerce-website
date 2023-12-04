@@ -61,7 +61,7 @@ class MinHeader extends HTMLElement {
                   <div class="filter1">
                     <ul>
                       <a href="posters.html">ALL POSTERS</a>
-                      <a href="posters.html">CATEGORIES</a>
+                      <a onclick="overlay()">CATEGORIES</a>
                       <a href="artists.html">ARTISTS</a>
                     </ul> 
                   </div>
@@ -75,6 +75,15 @@ class MinHeader extends HTMLElement {
                     <input type="email" id="email" placeholder="Enter your email adress"/>
                     <input type="submit" id="submit" value="SUBSCRIBE"/>
                   </form>
+                </div>
+                <div id="overlay">
+                  <i class="ri-arrow-left-s-line" onclick="off()" ></i>
+                  <h2>CATEGORIES</h2>
+                  <a href="posters.html">Black and White</a>
+                  <a href="posters.html">Nature</a>
+                  <a href="posters.html">Abstract</a>
+                  <a href="posters.html">Photographs</a>
+                  <a href="posters.html">Media</a>
                 </div>
               </nav>
         </header>    

@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="product.css" />
-    <script src="main.js"></script>
+    <script type="text/javascript" src="main.js" defer></script>
     <script type="text/javascript" src="functions.js" defer></script>
+    <script type="text/javascript" src="product.js" defer></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Open+Sans:wght@400;600;700&family=Overpass+Mono&family=PT+Serif&display=swap"
       rel="stylesheet"
@@ -20,59 +21,55 @@
       <div class="grid-container">
         <div class="grid-item">
           <div class="slide">
-            <img
-              class="demo cursor"
-              src="img/tokyo.jpg"
-              alt="img1"
-              onclick="currentSlide(1)"
-            />
+            <img id="show-image" src="img/tokyo.jpg" alt="img1" />
           </div>
           <div class="slide">
             <img
-              class="demo cursor"
+              id="show-image2"
               src="https://wallofart.se/cdn/shop/products/Vanellimelli_TOKYO_DRIFT_50x70_web_a5aad06d-3b3b-474e-95a1-32fe9be2379d_x450.jpg?v=1685657743"
               alt="img2"
-              onclick="currentSlide(2)"
             />
           </div>
           <div class="slide">
             <img
-              class="demo cursor"
+              id="show-image3"
               src="https://wallofart.se/cdn/shop/products/WOA_HOME_DIG-40_7c6b4c2f-2aff-4d19-a8c2-1e9dfc957348_1000x.jpg?v=1685657743"
               alt="img3"
-              onclick="currentSlide(3)"
             />
           </div>
           <div class="slide">
             <img
-              class="demo cursor"
+              id="show-image4"
               src="https://wallofart.se/cdn/shop/products/WOA_HOME_ANALOG-2_9e8505b2-9897-49af-9293-88fe01369295_1000x.jpg?v=1685657743"
               alt="img4"
-              onclick="currentSlide(4)"
             />
           </div>
         </div>
 
         <div class="grid-item2">
+          <img id="sticky-img" src="img/tokyo.jpg" alt="img5" />
           <div class="main-slide">
-            <img src="img/tokyo.jpg" alt="img5" />
-          </div>
-          <div class="main-slide">
+            <img id="my-image" src="img/tokyo.jpg" alt="img5" class="hidden" />
+
             <img
+              id="my-image2"
               src="https://wallofart.se/cdn/shop/products/Vanellimelli_TOKYO_DRIFT_50x70_web_a5aad06d-3b3b-474e-95a1-32fe9be2379d_x450.jpg?v=1685657743"
               alt="img2"
+              class="hidden"
             />
-          </div>
-          <div class="main-slide">
+
             <img
+              id="my-image3"
               src="https://wallofart.se/cdn/shop/products/WOA_HOME_DIG-40_7c6b4c2f-2aff-4d19-a8c2-1e9dfc957348_1000x.jpg?v=1685657743"
               alt="img3"
+              class="hidden"
             />
-          </div>
-          <div class="main-slide">
+
             <img
+              id="my-image4"
               src="https://wallofart.se/cdn/shop/products/WOA_HOME_ANALOG-2_9e8505b2-9897-49af-9293-88fe01369295_1000x.jpg?v=1685657743"
               alt="img4"
+              class="hidden"
             />
           </div>
         </div>

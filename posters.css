@@ -8,7 +8,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
   bottom: 0;
   height: auto;
 }
@@ -43,24 +42,10 @@
   height: 15px;
 }
 
-.poster-categories {
-  margin: 0;
-  padding-left: 100px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 31px;
-  row-gap: 34px;
-}
-
 .box {
   background: rgba(255, 255, 255, 1);
   width: 320px;
   height: 418px;
-}
-
-.box img {
-  width: 320px;
-  height: 341px;
 }
 
 .box figcaption {
@@ -105,8 +90,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 10px;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding: 20px 10px 0 10px;
     row-gap: 20px;
     margin-left: 0;
   }
@@ -155,13 +139,14 @@
   }
 
   .poster-categories {
-    margin-top: 54px;
-    margin-bottom: 170px;
+    padding-top: 54px;
+    padding-bottom: 170px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 31px;
     row-gap: 34px;
     width: 600px;
+    margin: 0;
   }
 
   .box {
@@ -194,7 +179,7 @@
   }
   #intro-img {
     display: flex;
-    width: 1300px;
+    width: 100%;
   }
 
   .intro-posters {
@@ -203,25 +188,30 @@
   }
 
   .poster-categories {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding-left: 200px;
-    column-gap: 20px;
+    column-gap: 50px;
+    row-gap: 34px;
     width: 1300px;
+    margin: 0;
+    padding-left: 400px;
+    padding-bottom: 100px;
   }
 
   .box {
     background: rgba(255, 255, 255, 1);
-    width: 250px;
-    height: 342.85px;
+    width: 320px;
+    height: 450px;
   }
 
   .box img {
-    width: 250px;
-    height: 278.57px;
+    width: 320px;
+    height: 350px;
   }
 
   #categories {
     display: inline-block;
+    padding-left: 50px;
   }
 
   /* sticky categories  

@@ -47,16 +47,16 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: first baseline;
-    column-gap: 5px;
+    column-gap: 20px;
     padding-top: 50px;
   }
 
   .artist figcaption {
-    width: 12rem;
+    width: 14rem;
   }
 
   .artist img {
-    width: 12rem;
+    width: 15rem;
     height: auto;
     padding-bottom: 10px;
   }

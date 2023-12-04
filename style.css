@@ -46,7 +46,7 @@ a:hover {
 }
 
 /* NAVBAR */
-/* The following 6 lines was adapted by https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_fixed_menu Accessed 2023-11-18 */
+/* The following 5 lines was adapted by https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_fixed_menu Accessed 2023-11-18 */
 nav {
   overflow: hidden;
   position: fixed;
@@ -131,6 +131,7 @@ got inspiration from https://www.google.com/search?q=animation+css+changing+text
 .nav2 a {
   text-decoration: none;
   color: #333;
+  transition: 0.3s;
 }
 
 .mobile button {
@@ -138,13 +139,15 @@ got inspiration from https://www.google.com/search?q=animation+css+changing+text
   background-color: rgba(173, 169, 161, 0.5);
 }
 
-#hamburger-menu {
+#hamburger-menu,
+#overlay {
   background-color: rgba(217, 217, 217, 1);
   display: grid;
   grid-template-columns: 1fr;
   justify-content: first baseline;
-  width: 100%;
+  width: 25%;
   height: auto;
+  margin: 0;
 }
 
 #hamburger-menu .filter1 {
@@ -156,12 +159,24 @@ got inspiration from https://www.google.com/search?q=animation+css+changing+text
   padding-bottom: 50px;
 }
 
-#hamburger-menu .filter1 ul a {
+#hamburger-menu .filter1 ul a,
+#overlay a,
+#overlay h2,
+.ri-arrow-left-s-line {
   display: block;
   width: 400px;
   text-decoration: none;
   color: #333;
   font-weight: 600;
+  line-height: 50px;
+  padding-left: 20px;
+}
+
+#overlay h2 {
+  display: block;
+  width: 400px;
+  text-decoration: underline 1px solid #333;
+  color: #333;
   line-height: 50px;
   padding-left: 20px;
 }
@@ -297,8 +312,9 @@ footer a {
     width: 200px;
   }
 
-  #hamburger-menu {
-    display: flex;
+  #hamburger-menu,
+  #overlay {
+    display: none;
     margin-left: 0;
     width: 240px;
     height: 550px;
@@ -367,7 +383,7 @@ footer a {
     display: contents;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    width: 600px;
+    width: 100%;
   }
 
   .mobile .nav1 p {
@@ -415,7 +431,8 @@ footer a {
     padding-left: 50px;
   }
 
-  #hamburger-menu {
+  #hamburger-menu,
+  #overlay {
     display: none;
   }
 
