@@ -129,6 +129,7 @@ input[type="radio"] {
     padding-left: 20px;
     outline: none;
   }
+
   form .input input,
   select {
     height: 4rem;
