@@ -104,6 +104,10 @@ input[type="radio"] {
 }
 
 @media only screen and (min-width: 320px) {
+  .checkout-page {
+    width: 320px;
+    padding-top: 120px;
+  }
   .payement,
   .shipping {
     width: 100%;
@@ -129,6 +133,10 @@ input[type="radio"] {
   select {
     height: 4rem;
     padding-left: 20px;
+  }
+  form {
+    width: 80%;
+    padding: 10px;
   }
   #card-info {
     display: none;
@@ -168,9 +176,24 @@ input[type="radio"] {
     display: inline-flex;
     flex-wrap: wrap;
   }
+  .ship {
+    width: 300px;
+  }
 }
 
 @media only screen and (min-width: 600px) {
+  .checkout-page {
+    padding-top: 150px;
+  }
+  form {
+    width: 580px;
+  }
+  .payement {
+    width: 580px;
+  }
+  .ship {
+    width: 580px;
+  }
 }
 
 @media only screen and (min-width: 1300px) {
@@ -213,12 +236,20 @@ input[type="radio"] {
     padding: 25px 0px 25px 0px;
     align-items: center;
   }
+  .ship {
+    width: 1260px;
+  }
 
   .payement img,
   .card-payement-img img,
   .shipping img {
     height: 3rem;
     display: inline-flex;
+    font-size: 16px;
+  }
+
+  form {
+    width: 1260px;
   }
 
   form .input input,
