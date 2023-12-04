@@ -118,8 +118,11 @@ hr {
 }
 
 @media only screen and (min-width: 600px) {
+  .continueshopping {
+    padding-left: 20px;
+  }
   .shoppingcart-page {
-    height: 1900px;
+    height: 1800px;
   }
   .cart-mobile {
     display: none;
@@ -159,8 +162,11 @@ hr {
 }
 
 @media only screen and (min-width: 1300px) {
+  .continueshopping {
+    padding-left: 190px;
+  }
   .shoppingcart-page {
-    height: 2300px;
+    height: 2000px;
   }
   .cart-mobile {
     display: none;
