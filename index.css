@@ -195,20 +195,20 @@
 
   .container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 20px;
-    align-items: baseline;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: last baseline;
+    column-gap: 15px;
     padding-top: 80px;
-    justify-content: center;
-    align-items: center;
     padding-left: 30px;
+    padding-right: 30px;
   }
 
   .container-optopt {
     display: flex;
-    width: 810px;
+    width: 820px;
     justify-content: baseline;
-    column-gap: 20px;
+    column-gap: 15px;
+    padding: 0;
   }
 
   .container-optopt a img {
@@ -218,12 +218,20 @@
 
   .container-optopt a figcaption {
     padding-top: 20px;
+    margin-left: 0;
+    width: 400px;
+  }
+
+  .container-opt {
+    padding-left: 20px;
+    height: 700px;
   }
 
   .container-opt a img {
     width: 400px;
     height: 524.5px;
     display: flex;
+    padding: 0;
   }
 
   .container-opt a figcaption {

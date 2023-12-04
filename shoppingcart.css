@@ -39,11 +39,11 @@ hr {
 
 @media only screen and (min-width: 320px) {
   .shoppingcart-page {
-    height: 2700px;
+    height: 2555px;
     width: 100%;
   }
   .shoppingcart-page h2 {
-    padding-bottom: 50px;
+    padding-bottom: 20px;
   }
 
   .shoppingcart {
@@ -68,23 +68,32 @@ hr {
   }
 
   .cart-img2 img {
-    width: 20rem;
+    width: 17rem;
+    padding-top: 25px;
   }
   .liked2 img {
-    width: 2rem;
+    width: 23px;
   }
 
   .cart-info2 .addmore2 {
     width: 7rem;
   }
-  .shoppingcart-page .buttons .confirm-button {
+  .shoppingcart-page .confirm-button {
     width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .buttons {
+    width: 200px;
+    margin: 0;
+    padding: 30px;
   }
 }
 
 @media only screen and (min-width: 600px) {
   .shoppingcart-page {
-    height: 2200px;
+    height: 1800px;
   }
   .cart-mobile {
     display: none;
@@ -96,7 +105,6 @@ hr {
     width: 90%;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 50px;
-
     padding: 50px 30px 50px 30px;
   }
   .shoppingcart-page h2 {
@@ -104,12 +112,12 @@ hr {
   }
 
   .shoppingcart a img {
-    width: 20rem;
+    width: 13rem;
     height: auto;
   }
 
   .liked img {
-    width: 2rem;
+    width: 23px;
   }
 }
 
@@ -137,9 +145,10 @@ hr {
   .shoppingcart a img {
     width: 20rem;
     height: auto;
+    padding-left: 50px;
   }
 
   .liked img {
-    width: 2rem;
+    width: 23px;
   }
 }
