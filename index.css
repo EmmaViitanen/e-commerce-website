@@ -66,7 +66,7 @@
     width: 75%;
     height: auto;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     padding-top: 20px;
   }
 
@@ -113,19 +113,16 @@
   }
 
   .container {
-    display: flex;
-    column-gap: 0px;
-    align-items: baseline;
     padding-top: 80px;
     margin: 0;
   }
 
   .container-optopt {
-    display: flex;
     width: 380px;
     justify-content: baseline;
     column-gap: 10px;
-    padding-left: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .container-optopt a img {
@@ -134,20 +131,35 @@
   }
 
   .container-optopt a figcaption {
-    width: 150px;
+    width: 180px;
     padding-top: 20px;
     padding-bottom: 80px;
+    justify-content: left;
+  }
+
+  .container-optopt figcaption p {
+    font-size: 14px;
   }
 
   .container-opt a img {
     width: 180px;
-    height: 236px;
+    height: 255px;
+    padding-right: 10px;
   }
 
   .container-opt a figcaption {
-    width: 150px;
+    width: 180px;
     padding-top: 20px;
-    font-size: 16px;
+    padding-bottom: 80px;
+  }
+
+  .container figcaption p {
+    font-size: 14px;
+  }
+
+  .container-opt figcaption h3 {
+    width: 300px;
+    text-align: left;
   }
 
   .container2 {
@@ -196,11 +208,14 @@
   .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    align-items: last baseline;
     column-gap: 15px;
     padding-top: 80px;
     padding-left: 30px;
     padding-right: 30px;
+  }
+
+  .container figcaption p {
+    font-size: 16px;
   }
 
   .container-optopt {
@@ -240,8 +255,7 @@
   }
 
   .container2 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
     column-gap: 100px;
     padding-top: 80px;
     padding-bottom: 100px;
