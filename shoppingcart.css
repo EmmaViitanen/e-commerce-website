@@ -63,6 +63,7 @@ hr {
     column-gap: 20px;
     padding-left: 30px;
     padding-bottom: 50px;
+    border-bottom: 1px solid #333;
   }
 
   .cart-img2 img {
@@ -87,11 +88,21 @@ hr {
     margin: 0;
     padding: 30px;
   }
+
+  .totalprice {
+    display: flex;
+    column-gap: 100px;
+    width: 100%;
+    font-weight: bolder;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #fff;
+  }
 }
 
 @media only screen and (min-width: 600px) {
   .shoppingcart-page {
-    height: 1800px;
+    height: 1900px;
   }
   .cart-mobile {
     display: none;
@@ -104,6 +115,7 @@ hr {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 50px;
     padding: 50px 30px 50px 30px;
+    border-bottom: 1px solid #333;
   }
   .shoppingcart-page h2 {
     padding-bottom: 40px;
@@ -116,6 +128,16 @@ hr {
 
   .liked img {
     width: 23px;
+  }
+
+  .totalprice {
+    display: flex;
+    column-gap: 200px;
+    width: 90%;
+    font-weight: bolder;
+    padding-bottom: 60px;
+    padding-top: 60px;
+    background-color: #fff;
   }
 }
 
@@ -134,6 +156,7 @@ hr {
     grid-template-columns: repeat(3, 1fr);
     row-gap: 35px;
     padding: 50px 0px 50px 0px;
+    border-bottom: 1px solid #333;
   }
 
   .shoppingcart-page h2 {
@@ -148,6 +171,16 @@ hr {
 
   .liked img {
     width: 23px;
+  }
+
+  .totalprice {
+    display: flex;
+    column-gap: 200px;
+    width: 70%;
+    font-weight: bolder;
+    padding-bottom: 60px;
+    padding-top: 60px;
+    background-color: #fff;
   }
 
   .confirm-button {
