@@ -103,6 +103,10 @@ input[type="radio"] {
   color: rgba(85, 85, 85, 1);
 }
 
+.cancel-button a:hover {
+  font-size: 600;
+}
+
 @media only screen and (min-width: 320px) {
   .checkout-page {
     width: 320px;
