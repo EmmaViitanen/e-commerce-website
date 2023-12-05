@@ -104,7 +104,9 @@ class MinHeader extends HTMLElement {
                 <div class="right">
                   <ul>
                       <a href="index.html"><img src="img/heart.png"></a>
-                      <a href="shoppingcart.html"><span class="carthover" onmouseenter="displayImg"('./img/drive.jpeg', this);" onmouseout="removeImg();">img src="img/shoppingbag.png"</span></a>
+                      <a id="cart" href="shoppingcart.html">
+                        <img src="img/shoppingbag.png">
+                      </a>
                   </ul>
                 </div>
                 </div>
