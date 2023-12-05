@@ -132,7 +132,103 @@ got inspiration from https://www.google.com/search?q=animation+css+changing+text
   color: #333;
   transition: 0.3s;
 }
+/* header cartsymbol hover effect 
+got inspiration from: https://www.w3schools.com/css/css_tooltip.asp*/
 
+#hovercart {
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 40px;
+  right: 6em;
+  top: 3em;
+}
+#hovercart .popup {
+  visibility: hidden;
+}
+#hovercart:hover .popup {
+  visibility: visible;
+}
+/* popup cart info, appears when hovering*/
+.popup {
+  background-color: rgba(226, 226, 226, 1);
+  height: 100%;
+  width: 450px;
+  right: 0;
+  top: 105px;
+}
+.popup #cart {
+  width: 0;
+  height: 0;
+  padding-left: 0;
+}
+.imgone {
+  display: flex;
+  padding-top: 10px;
+}
+.popup .imgone img {
+  width: 120px;
+  height: 163px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+.cart-info {
+  line-height: normal;
+  width: 100%;
+  padding-left: 20px;
+}
+.imgone .cart-info .addmore {
+  height: 30px;
+  width: 100px;
+  padding: 0;
+}
+.imgtwo {
+  display: flex;
+  padding-top: 20px;
+}
+.popup .imgtwo img {
+  width: 120px;
+  left: 0;
+  height: 163px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+.imgtwo .cart-info .addmore {
+  height: 30px;
+  width: 100px;
+  padding: 0;
+}
+.imgthree {
+  display: flex;
+  padding-top: 20px;
+}
+.popup .imgthree img {
+  width: 120px;
+  left: 0;
+  height: 163px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+.imgthree .cart-info .addmore {
+  height: 30px;
+  width: 100px;
+  padding: 0;
+}
+.popupconfirm-button {
+  background-color: rgba(173, 169, 161, 0.5);
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 20px;
+  text-align: center;
+}
+.popupconfirm-button #popupconfirm {
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 0;
+}
+/* -the hover css above ends- */
 .mobile button {
   border: none;
   background-color: rgba(173, 169, 161, 0.5);
