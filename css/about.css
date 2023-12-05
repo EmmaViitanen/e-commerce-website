@@ -19,9 +19,6 @@
   .about-page {
     height: 1265px;
   }
-  .intro {
-    margin: 10px;
-  }
 
   .about {
     margin: 10px;
@@ -46,16 +43,23 @@
     width: 100%;
   }
 
+  .intro h2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
   .intro p {
     width: 730px;
   }
 
   .sub-head {
     padding: 90px 0 10px 0;
+    margin-left: 410px;
   }
 
   .about {
     padding-bottom: 100px;
+    width: 90%;
   }
 
   .about p {

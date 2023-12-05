@@ -132,6 +132,10 @@
   margin-bottom: 2rem;
 }
 
+.hidden {
+  display: none;
+}
+
 @media only screen and (min-width: 320px) {
   .goback {
     padding-left: 20px;
