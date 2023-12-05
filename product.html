@@ -82,6 +82,7 @@
                 class="hidden"
               />
             </div>
+
             <div class="slideMobile">
               <div class="slideM">
                 <img id="show-image" src="img/tokyo.jpg" alt="img1" />
@@ -119,15 +120,27 @@
           <p id="v">Vanellimelli</p>
 
           <h2 id="price">€12</h2>
-
-          <p id="x">Choose size</p>
+          <span class="priceMobile">
+            <p id="x">Choose size</p>
+            <h2 id="y">€12</h2>
+          </span>
           <div class="sizes">
             <div class="sizebutton">30 x 40</div>
             <div class="sizebutton">40 x 50</div>
             <div class="sizebutton">50 x 70</div>
             <div class="sizebutton">70 x 100</div>
           </div>
-          <div><button type="button" id="add-to-bag">Add to bag</button></div>
+          <div id="sizeAlternative">
+            <select>
+              <option value="small">30 x 40</option>
+              <option value="regular">40 x 50</option>
+              <option value="medium">50 x 70</option>
+              <option value="large">70 x 100</option>
+            </select>
+          </div>
+          <div class="confirm-button">
+            <p>Add to bag</p>
+          </div>
         </div>
       </div>
     </main>

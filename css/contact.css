@@ -1,8 +1,4 @@
 /* ------ CONTACT PAGE ------- */
-label[for="c-email"],
-[for="c-message"] {
-  padding-bottom: 5px;
-}
 
 .input {
   display: flex;
@@ -13,6 +9,7 @@ label[for="c-email"],
 #c-email {
   border: none;
   outline: none;
+  padding: 0 20px 0 20px;
 }
 
 #c-message {
