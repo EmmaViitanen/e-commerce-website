@@ -339,8 +339,12 @@
   }
 
   .slide img {
-    width: 200px;
+    width: 225px;
     height: auto;
+    /* Lägg till en övergång på opacity */
+    opacity: 1;
+    transition: opacity 1s ease;
+    cursor: pointer;
   }
 
   .grid-item img {
