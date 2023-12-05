@@ -29,8 +29,59 @@ class MinHeader extends HTMLElement {
                         <a id="search" href="index.html"><img src="img/searchicon.png"></a>
                         <a href="index.html"><img src="img/account.png"></a>
                         <a href="index.html"><img src="img/heart.png"></a>
-                        <a href="shoppingcart.html"><img src="img/shoppingbag.png"></a>
+                        <a id="cart" href="shoppingcart.html">
+                        <img src="img/shoppingbag.png">
+                          <div id="hovercart">
+                          <nav class="popup">
+                              <div class="imgone">
+                              <img src="img/shoppingcartmonet.jpg" alt="The Parc Monceau 1878" />
+                                <div class="cart-info">
+                                  <br />
+                                  <h3>The Parc Monceau 1878</h3>
+                                  <p>70 x 100 cm</p>
+                                  <br />
+                                  <img class="addmore" src="img/addmore.jpg" alt="Add more option" />
+                                  <br />
+                                  <p>€32</p>
+                                </div>
+                              </div>
+                
+                          <div class="imgtwo">
+                            <img src="img/shoppingcarttokyo.jpg" alt="Tokyo Drift by Vanellimelli" />
+                            <div class="cart-info">
+                                <br />
+                                <h3>Tokyo Drift</h3>
+                                <p>30 x 40 cm</p>
+                                <br />
+                                <img class="addmore" src="img/addmore.jpg" alt="Add more option" />
+                                <br />
+                                <p>€12</p>
+                            </div>
+                          </div>
+                
+                          <div class="imgthree">
+                            <img src="img/shoppingcartpenseldrag2.jpg"
+                              alt="Abstrakta Penseldrag 15 by Mareike Böhmer" />
+                            <div class="cart-info">
+                                <br />
+                                <h3>Abstrakta Penseldrag 15</h3>
+                                <p>70 x 100 cm</p>
+                                <br />
+                                <img class="addmore" src="img/addmore.jpg" alt="Add more option" />
+                                <br />
+                                <p>€28</p>
+                            </div>
+                          </div>
+                          <div class="popupconfirm-button">
+                            <a id="popupconfirm" href="checkout.html">CHECKOUT €72</a>
+                          </div>
+                        </nav>
+                        </div>
+                      
+                    </a>
                     </ul>
+
+
                   </div>
                 </div>
               </div>  
@@ -53,7 +104,7 @@ class MinHeader extends HTMLElement {
                 <div class="right">
                   <ul>
                       <a href="index.html"><img src="img/heart.png"></a>
-                      <a href="shoppingcart.html"><img src="img/shoppingbag.png"></a>
+                      <a href="shoppingcart.html"><span class="carthover" onmouseenter="displayImg"('./img/drive.jpeg', this);" onmouseout="removeImg();">img src="img/shoppingbag.png"</span></a>
                   </ul>
                 </div>
                 </div>

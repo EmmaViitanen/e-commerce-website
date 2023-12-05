@@ -16,25 +16,25 @@
 
 img {
   padding: 60px;
-  width: 500px;
+  width: 200px;
 }
 
 .addmore {
-  width: 150px;
+  width: 50px;
   padding: 20px;
   padding-left: 0;
 }
 
 .confirm-button {
   background-color: rgba(173, 169, 161, 0.5);
-  margin: 300px;
-  padding: 50px;
+  margin: 500px;
+  padding: 20px;
   line-height: 60px;
   text-align: center;
 }
 .confirm-button a {
   text-decoration: none;
   color: #333;
-  font-size: 40px;
+  font-size: 20px;
   font-weight: 600;
 }
