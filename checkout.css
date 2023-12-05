@@ -17,27 +17,25 @@ select {
   width: 100%;
 }
 
-.input input[type="text"],
-input[type="email"],
-input[type="tel"],
-select option,
-#fname,
-#lname,
-#pnumber,
-#city,
-#expire,
-#security-code {
+select,
+.input2 input,
+.input input {
   border: 1px solid #333;
   padding-left: 20px;
   outline: none;
+  margin: 0;
+  color: #333;
 }
+
 .input {
   display: flex;
+  margin: 0;
 }
 
 .input2 {
   display: flex;
   flex-direction: row;
+  margin: 0;
 }
 
 #finame,
@@ -109,49 +107,46 @@ input[type="radio"] {
 
 @media only screen and (min-width: 320px) {
   .checkout-page {
-    width: 320px;
+    width: auto;
     padding-top: 120px;
   }
   .payement,
   .shipping {
     width: 100%;
+    height: auto;
     padding: 5px 0px 5px 0px;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #333;
   }
 
   .cardform {
-    width: 300px;
-  }
-
-  #finame,
-  #lname,
-  #pnumber,
-  #city,
-  #expire,
-  #security-code {
     width: 100%;
-    height: 4rem;
-    padding-left: 20px;
-    outline: none;
-  }
-
-  form .input input,
-  select {
-    height: 4rem;
-    padding-left: 20px;
-  }
-  form {
-    width: 80%;
-    padding: 10px;
   }
   #card-info {
     display: none;
     height: 200px;
   }
-
   #card-info form {
     width: 100%;
     padding-top: 0;
     padding-bottom: 0px;
+  }
+
+  .input2 input {
+    width: 50%;
+    height: 4rem;
+    padding-left: 20px;
+    outline: none;
+  }
+  form .input input,
+  select {
+    height: 4rem;
+    padding-left: 20px;
   }
 
   input[type="radio"] {
@@ -159,27 +154,23 @@ input[type="radio"] {
     width: 1.5rem;
   }
 
-  .payement,
-  .shipping {
-    background-color: #fff;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    border-bottom: 1px solid #333;
-    width: 100%;
-  }
   .payement-card {
     background-color: #fff;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
     align-items: center;
   }
   .payement img,
   .card-payement-img img,
   .shipping img {
-    height: 1rem;
-    display: inline-flex;
+    height: 2rem;
+    display: flex;
     flex-wrap: wrap;
+  }
+
+  .card-payement-img .bigCard {
+    height: 1.5rem;
   }
   .ship {
     width: 300px;
@@ -212,13 +203,8 @@ input[type="radio"] {
     width: 1233px;
   }
 
-  #finame,
-  #lname,
-  #pnumber,
-  #city,
-  #expire,
-  #security-code {
-    width: 616.5px;
+  .input2 input {
+    width: 50%;
     height: 60px;
     padding-left: 20px;
     outline: none;
@@ -247,6 +233,7 @@ input[type="radio"] {
 
   .payement img,
   .card-payement-img img,
+  .card-payement-img .bigCard,
   .shipping img {
     height: 3rem;
     display: inline-flex;
