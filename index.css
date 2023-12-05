@@ -4,13 +4,13 @@
   text-decoration: none;
   color: #333;
 }
+.containeroptions {
+  display: grid;
+  margin: 0;
+}
 
 .front-img {
   padding-top: 600px;
-}
-
-.middle-img {
-  width: 100%;
 }
 
 @media only screen and (min-width: 320px) {
@@ -205,7 +205,7 @@
     margin: 0;
   }
 
-  .container {
+  .containeroptions {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 15px;
@@ -262,8 +262,8 @@
   }
 
   .container-opt2 a img {
-    width: 550px;
-    height: 693.47px;
+    width: 34.375rem;
+    height: 43.341875rem;
   }
 
   .container-opt2 figcaption p {
