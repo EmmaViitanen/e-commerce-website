@@ -166,11 +166,12 @@ got inspiration from: https://www.w3schools.com/css/css_tooltip.asp*/
   display: flex;
   padding-top: 10px;
 }
-.popup .imgone img {
+.imgone #image {
   width: 120px;
   height: 163px;
   padding-top: 20px;
   padding-left: 20px;
+  margin: 0;
 }
 .cart-info {
   line-height: normal;
@@ -187,11 +188,12 @@ got inspiration from: https://www.w3schools.com/css/css_tooltip.asp*/
   display: flex;
   padding-top: 20px;
 }
-.popup .imgtwo img {
+.imgtwo #image {
   width: 120px;
   height: 163px;
   padding-top: 20px;
   padding-left: 20px;
+  margin: 0;
 }
 .imgtwo .cart-info .addmore {
   height: 30px;
@@ -202,11 +204,12 @@ got inspiration from: https://www.w3schools.com/css/css_tooltip.asp*/
   display: flex;
   padding-top: 20px;
 }
-.popup .imgthree img {
+.imgthree #image {
   width: 120px;
   height: 163px;
   padding-top: 20px;
   padding-left: 20px;
+  margin: 0;
 }
 .imgthree .cart-info .addmore {
   height: 30px;
