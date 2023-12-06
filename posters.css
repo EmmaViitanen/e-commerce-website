@@ -116,15 +116,7 @@
   #intro-head {
     display: flex;
     width: 100%;
-    padding-top: 70px;
-  }
-
-  .posters {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
+    padding-top: 30px;
   }
 
   .poster-categories {

@@ -156,7 +156,9 @@ input[type="radio"] {
 
   .payement-card {
     background-color: #fff;
-    display: grid;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 20px;
     align-items: center;
@@ -166,7 +168,12 @@ input[type="radio"] {
   .shipping img {
     height: 2rem;
     display: flex;
-    flex-wrap: wrap;
+  }
+
+  .card-payement-img {
+    width: 100%;
+    display: flex;
+    padding: 10px 0 10px 0;
   }
 
   .card-payement-img .bigCard {
