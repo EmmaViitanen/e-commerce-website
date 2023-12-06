@@ -12,11 +12,6 @@
   height: auto;
 }
 
-.posters {
-  display: flex;
-  justify-content: space-between;
-}
-
 .categories-head {
   text-transform: uppercase;
   font-weight: bold;
@@ -121,30 +116,29 @@
   #intro-head {
     display: flex;
     width: 100%;
-    padding-top: 70px;
+    padding-top: 30px;
   }
 
   .poster-categories {
     padding-top: 54px;
-    padding-left: 120px;
     padding-bottom: 170px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 31px;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
     row-gap: 34px;
-    width: 600px;
+    width: 100%;
     margin: 0;
   }
 
   .box {
     background: rgba(255, 255, 255, 1);
-    width: 250px;
-    height: 342.85px;
+    width: 14rem;
+    height: 20rem;
   }
 
   .box img {
-    width: 250px;
-    height: 278.57px;
+    width: 14rem;
+    height: 15rem;
   }
 
   .box figcaption {
@@ -221,6 +215,8 @@ https://www.youtube.com/watch?v=hPrXq9HLnrk*/
   }
 
   .posters {
+    display: flex;
+    justify-content: space-between;
     margin-top: 20px;
   }
 

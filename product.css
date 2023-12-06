@@ -111,6 +111,22 @@
   display: none;
 }
 
+.productInfo {
+  width: 100%;
+  display: inline-block;
+  padding: 20px 0 20px 0;
+}
+.productInfoOpt {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0 10px 0;
+}
+
+.arrow {
+  height: 25px;
+  width: auto;
+}
 @media only screen and (min-width: 320px) {
   .goback {
     padding-left: 20px;
