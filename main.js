@@ -34,7 +34,7 @@ class MinHeader extends HTMLElement {
                           <div id="hovercart">
                           <nav class="popup">
                               <div class="imgone">
-                              <img src="img/shoppingcartmonet.jpg" alt="The Parc Monceau 1878" />
+                              <img id="image" src="img/shoppingcartmonet.jpg" alt="The Parc Monceau 1878" />
                                 <div class="cart-info">
                                   <br />
                                   <h3>The Parc Monceau 1878</h3>
@@ -47,7 +47,7 @@ class MinHeader extends HTMLElement {
                               </div>
                 
                           <div class="imgtwo">
-                            <img src="img/shoppingcarttokyo.jpg" alt="Tokyo Drift by Vanellimelli" />
+                            <img id="image" src="img/shoppingcarttokyo.jpg" alt="Tokyo Drift by Vanellimelli" />
                             <div class="cart-info">
                                 <br />
                                 <h3>Tokyo Drift</h3>
@@ -60,7 +60,7 @@ class MinHeader extends HTMLElement {
                           </div>
                 
                           <div class="imgthree">
-                            <img src="img/shoppingcartpenseldrag2.jpg"
+                            <img id="image" src="img/shoppingcartpenseldrag2.jpg"
                               alt="Abstrakta Penseldrag 15 by Mareike Böhmer" />
                             <div class="cart-info">
                                 <br />
