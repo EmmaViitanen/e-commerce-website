@@ -66,6 +66,7 @@
 #x {
   font-weight: 600;
   padding-bottom: 5px;
+  margin: 0;
 }
 
 #price {
@@ -113,14 +114,18 @@
 
 .productInfo {
   width: 100%;
-  display: inline-block;
+  display: inline;
   padding: 20px 0 20px 0;
 }
 .productInfoOpt {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 10px 0 10px 0;
+}
+.productInfoOpt p,
+img {
+  margin: 0;
 }
 
 .arrow {
@@ -278,8 +283,9 @@
     display: block;
   }
   .priceMobile {
-    width: fit-content;
+    width: 100%;
     margin: 0;
+    place-content: left;
   }
   .sizes {
     display: flex;
@@ -341,7 +347,7 @@
   }
 
   .grid-item3 {
-    padding-left: 20px;
+    padding-left: 50px;
     padding-right: 20px;
     padding-top: 50px;
     margin: 0;
