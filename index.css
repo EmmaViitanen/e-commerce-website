@@ -4,13 +4,6 @@
   text-decoration: none;
   color: #333;
 }
-.containeroptions {
-  margin: 0;
-}
-
-.front-img {
-  padding-top: 600px;
-}
 
 @media only screen and (min-width: 320px) {
   /* ====== HOME PAGE ====== */
@@ -30,43 +23,21 @@
 
   .front-img {
     padding-top: 82px;
+    padding-bottom: 20px;
   }
 
-  .container {
+  .container1 {
     display: flex;
     flex-wrap: wrap;
     padding-top: 30px;
   }
 
-  .container-optopt {
-    display: flex;
-    width: 320px;
-    justify-content: center;
-    column-gap: 10px;
-    padding-top: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin: 0;
-  }
-
-  .container-optopt a img {
-    width: 150px;
-    height: 196.66px;
-  }
-
-  .container-optopt a figcaption {
-    width: 150px;
-    padding-top: 20px;
-    padding-bottom: 80px;
-  }
-
   .container-opt a img,
   .container-opt a figcaption {
-    width: 75%;
+    width: 15rem;
     height: auto;
-    display: flex;
-    justify-content: left;
-    padding-top: 20px;
+    padding-bottom: 30px;
+    justify-content: space-around;
   }
 
   .container2 {
@@ -80,7 +51,8 @@
 
   .container-opt2 a img {
     display: flex;
-    width: 120px;
+    justify-content: space-evenly;
+    width: 8rem;
     margin: 0;
   }
 }
@@ -111,43 +83,23 @@
     padding-top: 0px;
   }
 
-  .container {
+  .container1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
     padding-top: 30px;
     margin: 0;
   }
 
-  .container-optopt {
-    width: 380px;
-    justify-content: baseline;
-    column-gap: 10px;
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
-  .container-optopt a img {
-    width: 180px;
-    height: 236px;
-  }
-
-  .container-optopt a figcaption {
-    width: 180px;
-    padding-top: 20px;
-    padding-bottom: 80px;
-    justify-content: left;
-  }
-
-  .container-optopt figcaption p {
-    font-size: 14px;
-  }
-
   .container-opt a img {
-    width: 180px;
-    height: 255px;
+    width: 12rem;
+    height: 16rem;
     padding-right: 10px;
   }
 
   .container-opt a figcaption {
-    width: 180px;
+    display: inline-block;
+    width: 12rem;
     padding-top: 20px;
     padding-bottom: 80px;
   }
@@ -188,6 +140,7 @@
 
   #img1 {
     display: block;
+    width: 100%;
   }
   #img2 {
     display: none;
@@ -199,41 +152,20 @@
   }
 
   .middle-img a img {
+    display: block;
     width: 100%;
     padding-top: 80px;
     margin: 0;
   }
 
-  .containeroptions {
+  .container1 {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 15px;
-    padding-top: 80px;
-    padding-left: 30px;
-    padding-right: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
   }
 
   .container figcaption p {
     font-size: 16px;
-  }
-
-  .container-optopt {
-    display: flex;
-    width: 820px;
-    justify-content: baseline;
-    column-gap: 15px;
-    padding: 0;
-  }
-
-  .container-optopt a img {
-    width: 400px;
-    height: 524.5px;
-  }
-
-  .container-optopt a figcaption {
-    padding-top: 20px;
-    margin-left: 0;
-    width: 400px;
   }
 
   .container-opt {
@@ -249,20 +181,20 @@
   }
 
   .container-opt a figcaption {
+    display: inline-block;
     width: 400px;
     padding-top: 20px;
   }
 
   .container2 {
     display: flex;
-    column-gap: 100px;
     padding-top: 80px;
     padding-bottom: 100px;
   }
 
   .container-opt2 a img {
-    width: 34.375rem;
-    height: 43.341875rem;
+    width: 34rem;
+    height: 43rem;
   }
 
   .container-opt2 figcaption p {
