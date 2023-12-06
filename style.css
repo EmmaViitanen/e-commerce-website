@@ -144,7 +144,7 @@ got inspiration from: https://www.w3schools.com/css/css_tooltip.asp*/
   top: 3em;
 }
 #hovercart .popup {
-  visibility: visible;
+  visibility: hidden;
 }
 #hovercart:hover .popup {
   visibility: visible;
