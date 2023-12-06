@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="product.css" />
-    <script type="text/javascript" src="main.js" defer></script>
-    <script type="text/javascript" src="functions.js" defer></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/product.css" />
+    <script type="text/javascript" src="javascript/main.js" defer></script>
+    <script type="text/javascript" src="javascript/functions.js" defer></script>
     <script type="text/javascript" src="javascript/product.js" defer></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Open+Sans:wght@400;600;700&family=Overpass+Mono&family=PT+Serif&display=swap"
@@ -132,7 +132,8 @@
           </div>
           <div id="sizeAlternative">
             <form>
-              <select>
+              <label for="chooseSize"><p id="x">Choose size</p></label>
+              <select name="chooseSize" id="chooseSize">
                 <option value="small">30 x 40</option>
                 <option value="regular">40 x 50</option>
                 <option value="medium">50 x 70</option>
