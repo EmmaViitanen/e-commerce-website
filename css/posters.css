@@ -200,7 +200,7 @@ https://www.youtube.com/watch?v=hPrXq9HLnrk*/
   #categories:not(.sticky) {
     margin-left: 10px;
     position: absolute;
-    bottom: 150px;
+    bottom: 100px;
   }
 
   .sticky {

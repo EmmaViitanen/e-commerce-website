@@ -123,7 +123,7 @@ hr {
 
 @media only screen and (min-width: 600px) {
   .continueshopping {
-    padding-left: 20px;
+    padding-left: 1.5rem;
   }
   .shoppingcart-page {
     height: 1800px;
@@ -167,7 +167,7 @@ hr {
 
 @media only screen and (min-width: 1300px) {
   .continueshopping {
-    padding-left: 190px;
+    padding-left: 12em;
   }
   .shoppingcart-page {
     height: 2000px;
