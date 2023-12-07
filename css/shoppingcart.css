@@ -123,7 +123,7 @@ hr {
 
 @media only screen and (min-width: 600px) {
   .continueshopping {
-    padding-left: 20px;
+    padding-left: 1.5rem;
   }
   .shoppingcart-page {
     height: 1800px;
@@ -167,7 +167,7 @@ hr {
 
 @media only screen and (min-width: 1300px) {
   .continueshopping {
-    padding-left: 190px;
+    padding-left: 12em;
   }
   .shoppingcart-page {
     height: 2000px;
@@ -179,7 +179,7 @@ hr {
     display: contents;
     display: grid;
     background-color: #fff;
-    width: 70%;
+    width: 71%;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 35px;
     padding: 50px 0px 50px 0px;
