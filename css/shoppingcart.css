@@ -179,7 +179,7 @@ hr {
     display: contents;
     display: grid;
     background-color: #fff;
-    width: 71%;
+    width: 70%;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 35px;
     padding: 50px 0px 50px 0px;
