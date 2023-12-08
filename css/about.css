@@ -15,7 +15,7 @@
   padding-bottom: 100px;
 }
 
-@media only screen and (min-width: 375px) {
+@media only screen and (min-width: 320px) {
   .about-page {
     height: 1265px;
   }
@@ -54,7 +54,7 @@
 
   .sub-head {
     padding: 90px 0 10px 0;
-    margin-left: 250px;
+    margin-left: 185px;
   }
 
   .about {
